@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ro" data-key="iswim">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>iSwim School, Chișinău</title>
+<meta name="description" content="iSwim School, lecții de înot pentru copii și adulți la Aquacenter, Calea Orheiului 130, Chișinău. Antrenorul Stanislav, transport pentru copii. 5,0 din 16 recenzii.">
+<meta property="og:title" content="iSwim School">
+<meta property="og:description" content="Lecții de înot cu transport. 5,0 din 16 recenzii.">
+<meta property="og:image" content="img/pool.webp">
+<meta name="theme-color" content="#e8f8fb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230a8fb0'/%3E%3Cpath d='M8 38c6-6 10-6 16 0s10 6 16 0 10-6 16 0' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600;800&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "parents want calm water and a patient coach: the site opens on a living 3D pool you can ripple with a finger, then walks the four steps from fear of water to real strokes" · vibe: "pool tile white, lane-rope red and blue, deep aqua, round friendly type" · posture: committed · axes: light-aqua/rounded-display/aqua-coral · nav: wave mark, three links, trial · footer: deep aqua band · hero: the 3D pool full width with the promise on top · signature: 3D water surface with caustics that ripples under the pointer, and a four-step swim path */
+/* Hallmark · waive 24b · spacing hand-set around the pool and the swim path · rhythm follows the patru pași and the transport */
+/* critique: swim schools show kids in caps; this one wins on a named coach, safety and door-to-door transport, so the site shows the water, the steps and the van, with no children's faces */
+:root{
+  --foam:#e8f8fb; --foam-2:#d3eff5; --card:#fbfeff; --ink:#0b2f3a; --ink-2:#2d5361; --mute:#557580; --line:#bfe2ea;
+  --aqua:#0a8fb0; --aqua-deep:#06657d; --coral:#ef5b4c; --coral-deep:#c8402f; --sun:#ffd166;
+  --veil:rgba(11,47,58,.45);
+  --font-display:'Fredoka',sans-serif; --font-body:'Nunito',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--foam);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;margin:0;line-height:1;text-wrap:balance}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--foam);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border-radius:999px;border:2px solid var(--coral);background:var(--coral);color:var(--card);font:800 17px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--coral-deep);border-color:var(--coral-deep)}
+.btn:active,.chip:active,.step:active{transform:translateY(1px)}
+button:disabled{background:var(--foam-2);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--foam-2)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;background:var(--foam);box-shadow:0 1px 0 var(--line)}
+.nav.solid{background:var(--foam);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:72px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 26px/1 var(--font-display);color:var(--ink)}
+.wm svg{width:34px;height:34px}
+.links{display:flex;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-weight:800;padding:8px 0}
+.links a:hover{color:var(--coral)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:999px;border:2px solid var(--ink);background:var(--card);color:var(--ink);font:800 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--foam)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;background:var(--aqua)}
+#pool{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y}
+.hero .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.no-gl .hero .fb{display:block}
+.hero .wrap{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(40px,9vh,100px);pointer-events:none}
+.hero .card{background:var(--card);border-radius:32px;padding:clamp(22px,3vw,40px);max-width:640px;pointer-events:auto;box-shadow:0 30px 60px var(--veil)}
+.hero h1{font-size:clamp(46px,6.4vw,96px)}
+.hero h1 span{color:var(--aqua)}
+.hero p{font-size:19px;color:var(--ink-2);margin:14px 0 22px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+.hero .hint{position:absolute;right:var(--gut);top:96px;z-index:1;background:var(--card);border-radius:999px;padding:8px 14px;font-weight:800;font-size:14px;color:var(--aqua-deep)}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(42px,6vw,90px)}
+.h2 .ac{color:var(--aqua)}
+.lede{color:var(--ink-2);max-width:32em;margin:16px 0 0}
+
+/* swim path */
+.path{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:start}
+.steps{display:grid;gap:10px}
+.step{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;align-items:center;text-align:left;min-height:84px;padding:12px 16px;border-radius:22px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.step i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--foam-2);font:700 24px/1 var(--font-display);font-style:normal;color:var(--aqua-deep)}
+.step b{font:700 22px/1.1 var(--font-display);display:block}
+.step small{color:var(--mute);font-size:15px}
+.step[aria-pressed="true"]{border-color:var(--aqua);background:var(--aqua);color:var(--card)}
+.step[aria-pressed="true"] i{background:var(--card)}
+.step[aria-pressed="true"] small{color:var(--foam)}
+.detail{background:var(--card);border-radius:28px;padding:clamp(22px,3vw,36px);border:2px solid var(--line)}
+.detail h3{font-size:40px;color:var(--aqua-deep)}
+.detail ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.detail li{display:flex;gap:10px;align-items:flex-start}
+.detail li::before{content:"";flex:none;width:14px;height:14px;margin-top:6px;border-radius:50%;background:var(--coral)}
+.detail img{margin-top:20px;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:20px}
+@media (max-width:900px){.path{grid-template-columns:minmax(0,1fr)}}
+
+/* coach */
+.coach{background:var(--aqua);color:var(--card)}
+.coach .h2 .ac{color:var(--sun)}
+.cg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,72px);align-items:center}
+.cg img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:32px;border:6px solid var(--card)}
+.cg .ai{font-size:13px;color:var(--foam-2);margin-top:8px}
+.qs{display:grid;gap:12px;margin-top:24px}
+.qs figure{margin:0;background:var(--aqua-deep);border-radius:22px;padding:18px 20px}
+.qs p{margin:0;font-size:19px}
+.qs figcaption{margin-top:6px;font-size:14px;color:var(--foam-2)}
+@media (max-width:900px){.cg{grid-template-columns:minmax(0,1fr)}.cg img{max-width:380px}}
+
+/* transport + place */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:44px}
+.tile{background:var(--card);border-radius:28px;overflow:hidden;border:2px solid var(--line)}
+.tile img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.tile div{padding:24px;display:grid;gap:8px}
+.tile h3{font-size:32px}
+.tile p{margin:0;color:var(--ink-2)}
+@media (max-width:900px){.duo{grid-template-columns:minmax(0,1fr)}}
+
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:40px}
+.plan{background:var(--card);border-radius:26px;padding:26px;display:grid;gap:10px;border:2px solid var(--line);align-content:start}
+.plan h3{font-size:28px}
+.plan b{font:700 46px/1 var(--font-display);color:var(--aqua-deep)}
+.plan b small{font:600 15px/1 var(--font-body);color:var(--mute)}
+.plan p{margin:0;color:var(--ink-2)}
+.plan.hot{border-color:var(--coral)}
+.pnote{margin:16px 0 0;font-size:14px;color:var(--mute)}
+@media (max-width:900px){.plans{grid-template-columns:minmax(0,1fr)}}
+
+.revs{background:var(--foam-2)}
+.rg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:40px}
+.rq{margin:0;background:var(--card);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.rq p{margin:0;font-size:18px}
+.rq span{margin-top:auto;color:var(--mute);font-size:14px}
+@media (max-width:900px){.rg{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--card);border-radius:28px;padding:clamp(22px,3.4vw,38px);display:grid;gap:20px;border:2px solid var(--line)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:800;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:2px solid var(--line);background:transparent;color:var(--ink);font:700 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--aqua);border-color:var(--aqua);color:var(--card)}
+.chip[aria-pressed="true"] small{color:var(--foam)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:800}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:2px solid var(--line);border-radius:14px;background:var(--foam);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--coral)}
+.err{color:var(--coral-deep);font-weight:800;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}}
+
+.contact{background:var(--aqua-deep);color:var(--card)}
+.contact .h2 .ac{color:var(--sun)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:800;font-size:14px;color:var(--foam-2)}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:2px solid var(--foam-2);border-radius:999px;text-decoration:none;font-weight:800}
+.soc a:hover{background:var(--card);color:var(--aqua-deep)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:28px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--ink);color:var(--foam-2);padding:28px 0 110px;font-size:14px}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--ink);border-radius:999px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;color:var(--foam);text-decoration:none;font-weight:800}
+.mbar a.p{background:var(--coral)}
+@media (max-width:900px){.mbar{display:flex}.hero .hint{display:none}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav" data-solid="200"><div class="wrap">
+  <a class="wm" href="#top" aria-label="iSwim School"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#0a8fb0"/><path d="M5 20c3-3 5-3 8 0s5 3 8 0 5-3 8 0" fill="none" stroke="#fbfeff" stroke-width="3" stroke-linecap="round"/></svg>iSwim</a>
+  <nav class="links" aria-label="Meniu"><a href="#etape" data-ru="Этапы">Etape</a><a href="#transport" data-ru="Транспорт">Transport</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#inscriere" data-ru="Пробный урок">Lecție de probă</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <img class="fb" src="img/pool.webp" alt="Bazinul de înot de la Aquacenter">
+  <canvas id="pool" role="img" aria-label="Bazin 3D cu apă care face valuri sub degetul tău"></canvas>
+  <span class="hint" aria-hidden="true" data-ru="Проведите по воде">Atinge apa</span>
+  <div class="wrap">
+    <div class="card">
+      <h1><span data-ru="Плавание,">Înotul,</span> <span data-ru="без страха">fără frică</span></h1>
+      <p data-ru="Уроки для детей и взрослых в Aquacenter, с тренером Станиславом. Привезём и отвезём ребёнка.">Lecții pentru copii și adulți la Aquacenter, cu antrenorul Stanislav. Copilul e luat și adus acasă.</p>
+      <div class="acts"><a class="btn" href="#inscriere" data-ru="Записаться">Înscrie-te</a><a class="btn ghost" href="#etape" data-ru="Как мы учим">Cum învățăm</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="etape">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Четыре шага">Patru pași</span> <span class="ac" data-ru="к уверенному плаванию">spre înot sigur</span></h2>
+    <div class="path">
+      <div class="steps" id="steps"></div>
+      <div class="detail rv" aria-live="polite"><h3 id="sT"></h3><ul id="sL"></ul><img id="sI" src="img/pool3-s.webp" alt="" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="coach">
+  <div class="wrap cg">
+    <div class="rv"><img src="img/coach-s.webp" alt="Ilustrație: antrenor iSwim zâmbind lângă bazin" loading="lazy"><p class="ai" data-ru="Иллюстрация iSwim">Ilustrație iSwim</p></div>
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Тренер">Antrenorul</span> <span class="ac" data-ru="Станислав">Stanislav</span></h2>
+      <p class="lede" style="color:var(--foam)" data-ru="Родители пишут о терпении, заботе и о том, что он объясняет, зачем каждое упражнение.">Părinții scriu despre răbdare, grijă și despre faptul că explică de ce face fiecare exercițiu.</p>
+      <div class="qs">
+        <figure><p>„Domnul Stanislav e o persoană foarte deschisă, cointeresat să-l ajute pe fiecare în parte să invețe lucruri noi…”</p><figcaption>Nadia St</figcaption></figure>
+        <figure><p>„Cu răbdare dar si cu multa grijă echipa iSwim ii ghidează pe copii.”</p><figcaption>Olesea Gancearuc</figcaption></figure>
+        <figure><p>„Îmi place că îmi comunică de ce facem anumite exerciții și cum lucrează…”</p><figcaption>vasile lozan</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="transport">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Отвезём">Te ducem</span> <span class="ac" data-ru="и привезём">și te aducem</span></h2>
+    <div class="duo">
+      <article class="tile rv"><img src="img/van-s.webp" alt="Microbuzul iSwim pentru transportul copiilor" loading="lazy"><div><h3 data-ru="Транспорт">Transport</h3><p data-ru="Микроавтобус забирает детей и привозит обратно. Родители спокойны.">Microbuzul ia copiii și îi aduce înapoi. Părinții sunt liniștiți.</p></div></article>
+      <article class="tile rv"><img src="img/center-s.webp" alt="Clădirea Aquacenter cu fântâni" loading="lazy"><div><h3>Aquacenter</h3><p data-ru="Большой крытый бассейн на Калea Орхеюлуй 130.">Bazin acoperit mare, pe Calea Orheiului 130.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Абонементы,">Abonamente,</span> <span class="ac" data-ru="просто">simplu</span></h2>
+    <div class="plans">
+      <article class="plan rv"><h3 data-ru="Пробный">Proba</h3><b>150 <small>lei</small></b><p data-ru="Одно занятие, знакомство с водой и тренером.">O lecție, cunoaștere cu apa și cu antrenorul.</p></article>
+      <article class="plan hot rv"><h3 data-ru="8 занятий">8 lecții</h3><b>1.100 <small data-ru="лей/мес">lei/lună</small></b><p data-ru="Два раза в неделю, в группе.">De două ori pe săptămână, în grupă.</p></article>
+      <article class="plan rv"><h3 data-ru="Индивидуально">Individual</h3><b>350 <small data-ru="лей/урок">lei/lecție</small></b><p data-ru="Один на один с тренером.">Unu la unu cu antrenorul.</p></article>
+    </div>
+    <p class="pnote" data-ru="Цены ориентировочные, для демо. Школа подтвердит свой прайс и цену транспорта.">Prețuri orientative, pentru prezentare. Școala își confirmă prețurile și costul transportului.</p>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="5,0 из 5,">5,0 din 5,</span> <span class="ac" data-ru="от родителей">de la părinți</span></h2>
+    <div class="rg">
+      <figure class="rq rv"><p>„Copii fericiți, părinți liniștiți! Siguranță maximă chiar și în transportul oferit.”</p><span>qs 1</span></figure>
+      <figure class="rq rv"><p>„Profesionalismul antrenorilor și grija pentru copii este pe prim plan la orice antrenament desfășurat”</p><span>Victor Șelaru</span></figure>
+      <figure class="rq rv"><p>„…Stanislav e un antrenor profesionist, foarte atent și grijuliu și poți învăța cum corect să practici sportul de înot.”</p><span>Gusan Ana</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="inscriere" style="padding-top:0">
+  <div class="wrap book">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Запись">Înscriere</span> <span class="ac" data-ru="на пробный урок">la proba</span></h2>
+      <p class="lede" data-ru="Ответим в WhatsApp и подберём группу по возрасту и уровню.">Îți răspundem pe WhatsApp și alegem grupa după vârstă și nivel.</p>
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Для кого">Pentru cine</legend><div class="chips" data-g="who"><button type="button" class="chip" aria-pressed="true" data-ru="Ребёнок 4 до 7">Copil 4 la 7 ani</button><button type="button" class="chip" aria-pressed="false" data-ru="Ребёнок 8 до 14">Copil 8 la 14 ani</button><button type="button" class="chip" aria-pressed="false" data-ru="Взрослый">Adult</button></div></fieldset>
+      <fieldset><legend data-ru="Уровень">Nivelul</legend><div class="chips" data-g="lvl"><button type="button" class="chip" aria-pressed="true" data-ru="Боится воды">Îi e frică de apă</button><button type="button" class="chip" aria-pressed="false" data-ru="Держится на воде">Plutește</button><button type="button" class="chip" aria-pressed="false" data-ru="Уже плавает">Înoată deja</button></div></fieldset>
+      <fieldset><legend data-ru="Транспорт">Transport</legend><div class="chips" data-g="tr"><button type="button" class="chip" aria-pressed="false" data-ru="Нужен">Am nevoie</button><button type="button" class="chip" aria-pressed="true" data-ru="Не нужен">Nu, venim singuri</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя (родителя или ваше)">Numele (al părintelui sau al tău)</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Aquacenter,">Aquacenter,</span> <span class="ac" data-ru="Калea Орхеюлуй 130">Calea Orheiului 130</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>Calea Orheiului 130, MD-2075, Chișinău</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37360577533">+373 60 577 533</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Каждый день 07 до 22 (Ср до 20)">Zilnic 07 la 22 (miercuri până la 20)</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37360577533" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="https://www.instagram.com/iSwim_School" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@iSwim_School</a>
+        <a href="viber://chat?number=%2B37360577533"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=iSwim+SCHOOL+Calea+Orheiului+130" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+      </div>
+    </div>
+    <img class="rv" src="img/center2-s.webp" alt="Intrarea la Aquacenter" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 iSwim School</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37360577533" data-ru="Позвонить">Sună</a><a class="p" href="#inscriere" data-ru="Записаться">Înscrie-te</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  const ST = [
+    { ro: 'Adaptare', ru: 'Адаптация', sro: 'Apa devine prietenă', sru: 'Вода становится другом', lro: ['Intrăm încet, cu jocuri', 'Fața în apă, fără panică', 'Încredere în antrenor'], lru: ['Входим медленно, с играми', 'Лицо в воду без паники', 'Доверие к тренеру'], img: 'pool3' },
+    { ro: 'Plutire', ru: 'Плавучесть', sro: 'Corpul ține pe apă', sru: 'Тело держится на воде', lro: ['Steluța pe spate și pe burtă', 'Alunecare de la perete', 'Picioare ca la crawl'], lru: ['Звёздочка на спине и на груди', 'Скольжение от бортика', 'Ноги как в кроле'], img: 'lane' },
+    { ro: 'Respirație', ru: 'Дыхание', sro: 'Respiri în ritm', sru: 'Дыхание в ритме', lro: ['Expirație în apă', 'Respirație laterală', 'Primele bazine fără oprire'], lru: ['Выдох в воду', 'Боковое дыхание', 'Первые бассейны без остановки'], img: 'pool2' },
+    { ro: 'Stiluri', ru: 'Стили', sro: 'Crawl, spate, bras', sru: 'Кроль, спина, брасс', lro: ['Tehnică corectă la fiecare stil', 'Viraje și starturi', 'Pregătire pentru competiții'], lru: ['Правильная техника в каждом стиле', 'Повороты и старты', 'Подготовка к соревнованиям'], img: 'pool5' },
+  ];
+  let cs = 0;
+  $('#steps').innerHTML = ST.map((s, i) => `<button type="button" class="step rv" aria-pressed="${i === 0}" data-i="${i}"><i>${i + 1}</i><span><b>${s.ro}</b><small>${s.sro}</small></span></button>`).join('');
+  const show = (i) => { cs = i; const s = ST[i]; $$('.step').forEach((b, k) => { b.setAttribute('aria-pressed', String(k === i)); b.querySelector('b').textContent = T(ST[k].ro, ST[k].ru); b.querySelector('small').textContent = T(ST[k].sro, ST[k].sru); }); $('#sT').textContent = `${i + 1}. ${T(s.ro, s.ru)}`; $('#sL').innerHTML = (BF.lang === 'ru' ? s.lru : s.lro).map((x) => `<li>${x}</li>`).join(''); const im = $('#sI'); im.src = `img/${s.img}-s.webp`; im.alt = T(s.ro, s.ru); };
+  $('#steps').addEventListener('click', (e) => { const b = e.target.closest('.step'); if (b) show(+b.dataset.i); });
+  BF.onLang(() => show(cs));
+  BF.days($('#days'), { n: 8 });
+  BF.form('#bk', { phone: '37360577533', msg: () => `Bună ziua! Aș dori o lecție de probă la iSwim School.\nPentru: ${BF.ro(BF.val('who'))}\nNivel: ${BF.ro(BF.val('lvl'))}\nTransport: ${BF.ro(BF.val('tr'))}\nZiua: ${BF.dayText(BF.val('day'))}` });
+  BF.init();
+
+  /* ===== 3D pool: tiled floor with caustics, rippling surface, lane ropes ===== */
+  const cv = $('#pool'), r = BF.gl(cv, { alpha: false }); if (!r) return;
+  const sc = new THREE.Scene(); sc.background = new THREE.Color('#bfe9f2').convertSRGBToLinear();
+  const cam = new THREE.PerspectiveCamera(45, 1, .1, 100); cam.position.set(0, 9, 9); cam.lookAt(0, 0, -2);
+  const uni = { uT: { value: 0 }, uM: { value: new THREE.Vector2(9, 9) }, uP: { value: 0 } };
+  /* floor with tiles, lane lines and animated caustics */
+  const floorM = new THREE.ShaderMaterial({ uniforms: uni, vertexShader: 'varying vec2 vUv; varying vec3 vP; void main(){ vUv = uv; vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }',
+    fragmentShader: `uniform float uT; varying vec2 vUv; varying vec3 vP;
+      float c(vec2 p){ float v=0.; for(int i=0;i<3;i++){ float fi=float(i); p+=vec2(sin(p.y*1.3+uT*.6+fi),cos(p.x*1.1-uT*.5+fi*1.7)); v+=.5/length(fract(p)-.5+.001); } return v; }
+      void main(){ vec2 g = fract(vP.xy*1.2); float tile = step(.04,g.x)*step(.04,g.y);
+        vec3 base = mix(vec3(.55,.82,.88), vec3(.86,.96,.98), tile);
+        float lane = smoothstep(.12,.0,abs(mod(vP.x+1.5,3.)-1.5)); base = mix(base, vec3(.04,.18,.35), lane*step(abs(vP.y),34.)*.9);
+        float k = c(vP.xy*.6)*.06; base += vec3(k*.9,k,k);
+        gl_FragColor = vec4(base*vec3(.75,.95,1.),1.); }` });
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(50, 70, 1, 1), floorM); floor.rotation.x = -Math.PI / 2; floor.position.y = -2.2; sc.add(floor);
+  /* water surface */
+  const waterG = new THREE.PlaneGeometry(50, 70, 160, 220);
+  const waterM = new THREE.ShaderMaterial({ uniforms: uni, transparent: true,
+    vertexShader: `uniform float uT; uniform vec2 uM; uniform float uP; varying float vH; varying vec3 vW;
+      void main(){ vec3 p = position; float d = distance(p.xy, uM);
+        float h = sin(p.x*.6+uT*1.2)*.08 + sin(p.y*.8-uT*.9)*.06 + sin((p.x+p.y)*1.7+uT*2.)*.03 + uP*sin(d*3.-uT*7.)*exp(-d*.45)*.35;
+        p.z += h; vH = h; vW = (modelMatrix*vec4(p,1.)).xyz; gl_Position = projectionMatrix * viewMatrix * vec4(vW,1.); }`,
+    fragmentShader: `uniform float uT; varying float vH; varying vec3 vW;
+      void main(){ vec3 n = normalize(vec3(-dFdx(vW.y)*20., 1., -dFdy(vW.y)*20.)); float f = pow(1.-abs(n.y),2.);
+        vec3 col = mix(vec3(.1,.66,.8), vec3(.85,.98,1.), clamp(vH*4.+.35,0.,1.)*.5 + f*.6);
+        gl_FragColor = vec4(col, .55 + f*.3); }` });
+  waterM.extensions = { derivatives: true };
+  const water = new THREE.Mesh(waterG, waterM); water.rotation.x = -Math.PI / 2; sc.add(water);
+  /* lane ropes made of floats */
+  const fG = new THREE.CylinderGeometry(.16, .16, .32, 12); fG.rotateZ(Math.PI / 2);
+  const cols = ['#ef5b4c', '#fbfeff', '#1d4ed8'].map((c) => { const m = new THREE.MeshStandardMaterial({ color: new THREE.Color(c).convertSRGBToLinear(), roughness: .4 }); return m; });
+  sc.add(new THREE.HemisphereLight(0xffffff, 0x3aa0c8, 1));
+  const ropes = [];
+  [-4.5, -1.5, 1.5, 4.5].forEach((x) => { for (let z = -34; z <= 8; z += .36) { const k = Math.floor((z + 34) / .36); const m = new THREE.Mesh(fG, cols[(k % 10) < 2 ? 0 : (k % 10) < 8 ? 2 : 1]); m.rotation.y = Math.PI / 2; m.position.set(x, 0, z); m.userData.z = z; sc.add(m); ropes.push(m); } });
+  /* a floating kickboard */
+  const kb = new THREE.Mesh(new THREE.BoxGeometry(1.4, .12, 2), new THREE.MeshStandardMaterial({ color: new THREE.Color('#ffd166').convertSRGBToLinear(), roughness: .5 })); kb.position.set(-3, .05, 3); kb.rotation.y = .5; sc.add(kb);
+  BF.fit(r, cam, cv, (w, h) => { cam.fov = w / h < .8 ? 70 : 45; });
+  const ray = new THREE.Raycaster(), pt = new THREE.Vector2(), plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0), hit = new THREE.Vector3();
+  const touch = (e) => { const b = cv.getBoundingClientRect(); pt.set((e.clientX - b.left) / b.width * 2 - 1, -((e.clientY - b.top) / b.height) * 2 + 1); ray.setFromCamera(pt, cam); if (ray.ray.intersectPlane(plane, hit)) { uni.uM.value.set(hit.x, -hit.z); uni.uP.value = 1; } };
+  cv.addEventListener('pointermove', touch); cv.addEventListener('pointerdown', touch);
+  BF.loop(cv, (t) => {
+    uni.uT.value = BF.reduce ? 0 : t; uni.uP.value *= .985;
+    ropes.forEach((m) => { m.position.y = Math.sin(m.position.x * .6 + t * 1.2) * .08 + Math.sin(-m.userData.z * .8 - t * .9) * .06; });
+    kb.position.y = .05 + Math.sin(t * 1.3) * .08; kb.rotation.z = Math.sin(t * .9) * .05;
+    cam.position.x = Math.sin(t * .1) * .6; cam.lookAt(0, 0, -2);
+    r.render(sc, cam);
+  });
+})();
+</script>
+</body>
+</html>

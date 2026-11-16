@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ro" data-key="flor">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>FLORISTERÍA, Bălți</title>
+<meta name="description" content="FLORISTERÍA, florărie pe strada Nicolae Iorga din Bălți. Buchete, coșuri, bujori în dantelă. Livrare și ridicare din magazin. Zilnic 09 la 21.">
+<meta property="og:title" content="FLORISTERÍA, Bălți">
+<meta property="og:description" content="Buchete făcute cu gust. 4,9 din 22 de recenzii. Zilnic 09 la 21.">
+<meta property="og:image" content="img/front.webp">
+<meta name="theme-color" content="#121012">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23121012'/%3E%3Cpath d='M14 58V30a18 18 0 0 1 36 0v28' fill='none' stroke='%23f4a7c3' stroke-width='6' stroke-dasharray='3 3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&family=Manrope:wght@400;500;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "their shopfront is black glass framed by a pink blossom arch, so you enter the site through that arch in 3D, and inside it reads like a fashion lookbook of bouquets" · vibe: "black glass, sakura pink, white tissue, Bodoni like a boutique label" · posture: committed · axes: dark-light-split/didone-display/pink-on-black · nav: arch mark, three links, order · footer: black with a pink rule · hero: gate first (3D blossom arch and sliding doors), then the shopfront photo · signature: 3D blossom arch gate and a lookbook rail of bouquets with prices */
+/* Hallmark · waive 24b · spacing hand-set around the lookbook rail · rhythm follows the colecția and the comanda */
+/* critique: Bălți has many florists; this one wins on presentation and packaging, so the site behaves like a boutique lookbook instead of a price list */
+:root{
+  --black:#121012; --black-2:#1d1a1d; --paper:#fbf6f4; --paper-2:#f3e7e6; --ink:#1a1518; --ink-2:#4a3f45; --mute:#7d7177; --line:#e6d6d8;
+  --pink:#f4a7c3; --pink-deep:#c23d76; --pink-ink:#9b2a5c; --light:#f4eef0;
+  --veil:rgba(18,16,18,.6);
+  --font-display:'Bodoni Moda',serif; --font-body:'Manrope',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+.gated body{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:1.02;text-wrap:balance}
+:focus-visible{outline:2px solid var(--pink-deep);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--black);color:var(--paper);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;border:1px solid var(--pink-deep);background:var(--pink-deep);color:var(--paper);font:700 16px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--pink-ink);border-color:var(--pink-ink)}
+.btn:active,.chip:active{transform:translateY(1px)}
+button:disabled{background:var(--paper-2);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--paper);border-color:var(--paper)}
+.btn.ghost:hover{background:var(--paper);color:var(--black)}
+
+#gate{position:fixed;inset:0;z-index:100;background:var(--black);color:var(--paper);display:grid;place-items:end center;transition:opacity .8s var(--ease)}
+#gate canvas{position:absolute;inset:0;width:100%;height:100%}
+#gate .gtext{position:relative;z-index:2;text-align:center;padding:0 20px clamp(30px,7vh,70px);display:grid;gap:14px;justify-items:center}
+#gate .gtext b{font:400 clamp(40px,7vw,86px)/1 var(--font-display)}
+#gate .gtext p{margin:0;color:var(--pink)}
+#gate .skipg{background:none;border:0;color:var(--light);font:400 15px/1 var(--font-body);text-decoration:underline;cursor:pointer;min-height:40px}
+#gate.going .gtext{opacity:0;transition:opacity .35s var(--ease)}
+#gate.out{opacity:0;pointer-events:none}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;color:var(--paper);transition:background-color .3s var(--ease),color .3s var(--ease)}
+.nav.solid{background:var(--paper);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:74px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 22px/1 var(--font-display)}
+.wm svg{width:26px;height:26px;color:var(--pink-deep)}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;padding:8px 0}
+.links a:hover{color:var(--pink-deep)}
+.nav:not(.solid) .links a:hover{color:var(--pink)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:999px;border:1px solid currentColor;background:transparent;color:inherit;font:700 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--pink-deep);border-color:var(--pink-deep);color:var(--paper)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;height:100svh;min-height:620px;display:flex;align-items:flex-end;color:var(--paper);overflow:hidden;background:var(--black)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--black) 0,var(--veil) 40%,transparent 75%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(40px,9vh,100px)}
+.hero h1{font-size:clamp(54px,9vw,150px);font-weight:600}
+.hero p{max-width:28em;font-size:20px;margin:16px 0 26px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(44px,6.2vw,96px)}
+.h2 .ac{color:var(--pink-deep)}
+.lede{color:var(--ink-2);max-width:32em;margin:16px 0 0}
+
+/* lookbook rail */
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gut) 20px;margin-top:44px}
+.look{flex:none;width:clamp(240px,28vw,360px);scroll-snap-align:start;margin:0}
+.look img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:220px 220px 6px 6px}
+.look figcaption{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;margin-top:14px}
+.look b{font:400 26px/1.1 var(--font-display)}
+.look span{font-weight:700;color:var(--pink-ink);white-space:nowrap}
+.look small{grid-column:1/-1;color:var(--mute);font-size:15px}
+.railnav{display:flex;gap:8px;margin-top:8px}
+.railnav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.railnav svg{width:20px;height:20px}
+.pnote{margin:12px 0 0;font-size:14px;color:var(--mute)}
+
+/* peonies feature */
+.peony{background:var(--black);color:var(--paper)}
+.peony .h2 .ac{color:var(--pink)}
+.peony .lede{color:var(--light)}
+.pf{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.pf .pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.pf .pair img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.pf .pair img:last-child{margin-top:60px}
+.pf ul{list-style:none;margin:26px 0 30px;padding:0;display:grid;gap:10px}
+.pf li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--black-2);padding-bottom:10px}
+.pf li span{color:var(--pink)}
+@media (max-width:900px){.pf{grid-template-columns:minmax(0,1fr)}}
+
+.serv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.sv{border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:10px;background:var(--paper)}
+.sv svg{width:32px;height:32px;color:var(--pink-deep)}
+.sv h3{font-size:30px}
+.sv p{margin:0;color:var(--ink-2)}
+@media (max-width:900px){.serv{grid-template-columns:minmax(0,1fr)}}
+
+.revs{background:var(--paper-2)}
+.rg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.rq{margin:0;background:var(--paper);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.rq p{margin:0;font-size:19px}
+.rq span{margin-top:auto;color:var(--mute);font-size:14px}
+@media (max-width:900px){.rg{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,3.4vw,38px);display:grid;gap:20px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--black);border-color:var(--black);color:var(--paper)}
+.chip[aria-pressed="true"] small{color:var(--pink)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:700}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:12px;background:var(--paper-2);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--pink-deep)}
+.err{color:var(--pink-ink);font-weight:700;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+.side img{margin-top:26px;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 6px 6px}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}.side img{display:none}}
+
+.contact{background:var(--black);color:var(--paper)}
+.contact .h2 .ac{color:var(--pink)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:700;font-size:14px;color:var(--pink)}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--ink-2);border-radius:999px;text-decoration:none}
+.soc a:hover{border-color:var(--pink);color:var(--pink)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:4/5;object-fit:cover;max-height:560px;border-radius:220px 220px 6px 6px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--black);color:var(--light);padding:28px 0 110px;font-size:14px;border-top:1px solid var(--pink-deep)}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--black);border-radius:999px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;color:var(--paper);text-decoration:none;font-weight:700}
+.mbar a.p{background:var(--pink-deep)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<div id="gate" role="dialog" aria-label="Intrare în FLORISTERÍA">
+  <canvas id="arch" aria-hidden="true"></canvas>
+  <div class="gtext">
+    <b>FLORISTERÍA</b>
+    <p data-ru="Бельцы · Николае Йорга">Bălți · Nicolae Iorga</p>
+    <button class="btn" type="button" data-enter data-ru="Войти под арку">Intră sub arcadă</button>
+    <button class="skipg" type="button" data-skip data-ru="Пропустить">Sari peste</button>
+  </div>
+</div>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav" data-solid="300"><div class="wrap">
+  <a class="wm" href="#top" aria-label="FLORISTERÍA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 22V11a7 7 0 0 1 14 0v11" stroke-dasharray="2 2"/></svg>FLORISTERÍA</a>
+  <nav class="links" aria-label="Meniu"><a href="#colectia" data-ru="Коллекция">Colecția</a><a href="#bujori" data-ru="Пионы">Bujori</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#comanda" data-ru="Заказать">Comandă</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <img src="img/front.webp" alt="Vitrina neagră a florăriei FLORISTERÍA cu arcadă de flori roz" width="1200" height="1600">
+  <div class="wrap">
+    <h1>FLORISTERÍA</h1>
+    <p data-ru="Букеты, которые хочется фотографировать. Бельцы, каждый день 09 до 21.">Buchete pe care vrei să le fotografiezi. Bălți, zilnic 09 la 21.</p>
+    <div class="acts"><a class="btn" href="#colectia" data-ru="Смотреть коллекцию">Vezi colecția</a><a class="btn ghost" href="#comanda" data-ru="Заказать букет">Comandă un buchet</a></div>
+  </div>
+</section>
+
+<section id="colectia" style="padding-bottom:60px">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Коллекция,">Colecția,</span> <span class="ac" data-ru="как лукбук">ca un lookbook</span></h2>
+    <p class="lede rv" data-ru="Листайте. Каждый букет можно заказать как есть или в вашем цвете.">Derulează. Fiecare buchet se poate comanda așa cum e, sau în culorile tale.</p>
+  </div>
+  <div class="rail" id="rail" tabindex="0" aria-label="Colecția de buchete">
+    <figure class="look"><img src="img/b1-s.webp" alt="Buchet mare cu trandafiri, crizanteme și orhidee în ambalaj alb" loading="lazy"><figcaption><b>Grand</b><span><span data-ru="от">de la</span> 1.200 lei</span><small data-ru="Розы, хризантемы, орхидеи">Trandafiri, crizanteme, orhidee</small></figcaption></figure>
+    <figure class="look"><img src="img/cream-s.webp" alt="Buchet de trandafiri roz și albi în dantelă" loading="lazy"><figcaption><b>Dantelă</b><span><span data-ru="от">de la</span> 950 lei</span><small data-ru="Пионовидные розы в кружеве">Trandafiri bujor, în dantelă</small></figcaption></figure>
+    <figure class="look"><img src="img/basket-s.webp" alt="Coș cu trandafiri tufă mov" loading="lazy"><figcaption><b>Violetta</b><span><span data-ru="от">de la</span> 800 lei</span><small data-ru="Корзина кустовых роз">Coș cu trandafiri tufă</small></figcaption></figure>
+    <figure class="look"><img src="img/white-s.webp" alt="Buchet de crizanteme albe cu eucalipt" loading="lazy"><figcaption><b>Nuvola</b><span><span data-ru="от">de la</span> 650 lei</span><small data-ru="Белые хризантемы, эвкалипт">Crizanteme albe, eucalipt</small></figcaption></figure>
+    <figure class="look"><img src="img/blue-s.webp" alt="Buchet de trandafiri roz și albi în hârtie albastră" loading="lazy"><figcaption><b>Cielo</b><span><span data-ru="от">de la</span> 750 lei</span><small data-ru="Розы в голубой бумаге">Trandafiri în hârtie bleu</small></figcaption></figure>
+    <figure class="look"><img src="img/basket2-s.webp" alt="Coș cu trandafiri roz și eucalipt" loading="lazy"><figcaption><b>Rosa</b><span><span data-ru="от">de la</span> 850 lei</span><small data-ru="Корзина с эвкалиптом">Coș cu eucalipt</small></figcaption></figure>
+    <figure class="look"><img src="img/pinkwrap-s.webp" alt="Buchet cu hortensie și trandafiri roz" loading="lazy"><figcaption><b>Dolce</b><span><span data-ru="от">de la</span> 900 lei</span><small data-ru="Гортензия и розы">Hortensie și trandafiri</small></figcaption></figure>
+    <figure class="look"><img src="img/baskets-s.webp" alt="Coșuri mici cu trandafiri roșii" loading="lazy"><figcaption><b>Mini</b><span><span data-ru="от">de la</span> 450 lei</span><small data-ru="Маленькие корзины">Coșulețe mici</small></figcaption></figure>
+  </div>
+  <div class="wrap"><div class="railnav"><button type="button" id="rPrev" aria-label="Înapoi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" id="rNext" aria-label="Înainte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  <p class="pnote" data-ru="Цены ориентировочные, для демо. Флористы подтвердят свой прайс.">Prețuri orientative, pentru prezentare. Floristele își confirmă prețurile.</p></div>
+</section>
+
+<section class="peony" id="bujori">
+  <div class="wrap pf">
+    <div class="pair rv"><img src="img/lace-s.webp" alt="Bujori îmbrăcați în dantelă" loading="lazy"><img src="img/peony-s.webp" alt="Buchet de bujori roșii" loading="lazy"></div>
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Пионы,">Bujori,</span> <span class="ac" data-ru="в кружеве">în dantelă</span></h2>
+      <p class="lede" data-ru="Сезон короткий. Запишитесь заранее, и мы отложим самые красивые.">Sezonul e scurt. Spune-ne din timp și îi păstrăm pe cei mai frumoși pentru tine.</p>
+      <ul><li><b data-ru="9 пионов">9 bujori</b><span><span data-ru="от">de la</span> 900 lei</span></li><li><b data-ru="15 пионов">15 bujori</b><span><span data-ru="от">de la</span> 1.400 lei</span></li><li><b data-ru="25 пионов">25 bujori</b><span><span data-ru="от">de la</span> 2.200 lei</span></li></ul>
+      <a class="btn" href="#comanda" data-ru="Отложить пионы">Rezervă bujori</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Как вам">Cum îți</span> <span class="ac" data-ru="удобно">e comod</span></h2>
+    <div class="serv">
+      <article class="sv rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><h3 data-ru="Доставка">Livrare</h3><p data-ru="По Бельцам, в день заказа, если успеваем собрать.">În Bălți, în aceeași zi, dacă reușim să-l facem.</p></article>
+      <article class="sv rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11zM9 21v-6h6v6"/></svg><h3 data-ru="Самовывоз">Ridicare</h3><p data-ru="Закажите заранее, заберите готовый на Николае Йорга.">Comanzi din timp, îl iei gata de pe Nicolae Iorga.</p></article>
+      <article class="sv rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg><h3 data-ru="Оформление">Decor</h3><p data-ru="Свадьбы, юбилеи, витрины. Обсудим в WhatsApp.">Nunți, aniversări, vitrine. Discutăm pe WhatsApp.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Пишут о нас">Scriu despre noi</span> <span class="ac" data-ru="на двух языках">în două limbi</span></h2>
+    <div class="rg">
+      <figure class="rq rv"><p>„Flori superbe, aranjamente realizate cu foarte mult bun gust și o atenție deosebită la fiecare detaliu.”</p><span>Felicia Jechiu</span></figure>
+      <figure class="rq rv"><p>„Самые свежие цветочки! Очень красивые букеты и очень хорошо и качественно упакованы!”</p><span>Agape</span></figure>
+      <figure class="rq rv"><p>„флорист помогла быстро собрать аккуратный букет и учла все пожелания… доставили вовремя”</p><span>Влада Флока</span></figure>
+      <figure class="rq rv"><p>„Compozițiile sunt superbe, iar deservirea calitativă și rapidă”</p><span>Livia Paiu</span></figure>
+      <figure class="rq rv"><p>„Самое лучшее место! очень красивые букеты и композиции! … и отдельно красивый интерьер”</p><span>Iuliana Iavorscaia</span></figure>
+      <figure class="rq rv"><p>„au atitudine frumoasă, prietenoasă, profesionistă și buchete foarte frumoase”</p><span>Radetchi Cornel</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="comanda">
+  <div class="wrap book">
+    <div class="side rv">
+      <h2 class="h2"><span data-ru="Ваш">Buchetul</span> <span class="ac" data-ru="букет">tău</span></h2>
+      <p class="lede" data-ru="Выберите стиль и бюджет. Флорист пришлёт варианты в WhatsApp.">Alegi stilul și bugetul. Floristul îți trimite variante pe WhatsApp.</p>
+      <img src="img/car-s.webp" alt="Buchete gata de livrare" loading="lazy">
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Стиль">Stilul</legend><div class="chips" data-g="sty"><button type="button" class="chip" aria-pressed="true" data-ru="Нежный">Gingaș</button><button type="button" class="chip" aria-pressed="false" data-ru="Яркий">Aprins</button><button type="button" class="chip" aria-pressed="false" data-ru="Белый">Alb</button><button type="button" class="chip" aria-pressed="false" data-ru="Корзина">Coș</button><button type="button" class="chip" aria-pressed="false" data-ru="Пионы">Bujori</button></div></fieldset>
+      <fieldset><legend data-ru="Бюджет">Bugetul</legend><div class="chips" data-g="bud"><button type="button" class="chip" aria-pressed="false">500 lei</button><button type="button" class="chip" aria-pressed="true">800 lei</button><button type="button" class="chip" aria-pressed="false">1.200 lei</button><button type="button" class="chip" aria-pressed="false">2.000+ lei</button></div></fieldset>
+      <fieldset><legend data-ru="Как получить">Cum îl primești</legend><div class="chips" data-g="how"><button type="button" class="chip" aria-pressed="true" data-ru="Доставка">Livrare</button><button type="button" class="chip" aria-pressed="false" data-ru="Самовывоз">Ridic din magazin</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <label class="f"><span data-ru="Адрес (если доставка)">Adresa (dacă e livrare)</span><input type="text" name="addr" autocomplete="street-address"></label>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Бельцы,">Bălți,</span> <span class="ac" data-ru="Николае Йорга">Nicolae Iorga</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>Strada Nicolae Iorga, Bălți (QW6R+MG)</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37368850561">+373 68 850 561</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Каждый день, 09:00 до 21:00">Zilnic, 09:00 la 21:00</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37368850561" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37368850561"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=floristeria%20balti" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=FLORISTERIA+Balti+Nicolae+Iorga" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+      </div>
+    </div>
+    <img class="rv" src="img/front-s.webp" alt="Intrarea florăriei cu arcada de flori roz" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 Floristería, Bălți</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37368850561" data-ru="Позвонить">Sună</a><a class="p" href="#comanda" data-ru="Заказать">Comandă</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $ } = BF;
+  const rail = $('#rail'), step = () => rail.querySelector('.look').offsetWidth + 18;
+  $('#rPrev').addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: BF.reduce ? 'auto' : 'smooth' }));
+  $('#rNext').addEventListener('click', () => rail.scrollBy({ left: step(), behavior: BF.reduce ? 'auto' : 'smooth' }));
+  BF.days($('#days'), { n: 8 });
+  BF.form('#bk', { phone: '37368850561', msg: (f) => `Bună ziua! Aș dori un buchet de la FLORISTERÍA.\nStil: ${BF.ro(BF.val('sty'))}\nBuget: ${BF.ro(BF.val('bud'))}\nCum: ${BF.ro(BF.val('how'))}\nZiua: ${BF.dayText(BF.val('day'))}${f.addr.value.trim() ? '\nAdresa: ' + f.addr.value.trim() : ''}` });
+  BF.init();
+
+  /* ===== gate: blossom arch over a black glass door ===== */
+  const cv = $('#arch'), r = BF.gl(cv);
+  if (!r) { BF.gate((done) => { $('#gate').classList.add('out'); setTimeout(done, 700); }); return; }
+  const sc = new THREE.Scene(); sc.fog = new THREE.Fog(0x121012, 8, 22);
+  const cam = new THREE.PerspectiveCamera(40, 1, .1, 60);
+  sc.add(new THREE.HemisphereLight(0xffe9f2, 0x121012, .8));
+  const key = new THREE.DirectionalLight(0xffffff, .8); key.position.set(2, 5, 6); sc.add(key);
+  const glow = new THREE.PointLight(0xffd6e6, 1.6, 10); glow.position.set(0, 1.4, -1.5); sc.add(glow);
+  const M = (c, o = {}) => { const m = new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: .5 }, o)); m.color.convertSRGBToLinear(); return m; };
+  const wall = new THREE.Mesh(new THREE.BoxGeometry(14, 9, .3), M('#1d1a1d', { roughness: .3, metalness: .4 })); wall.position.set(0, 2.5, -.4); sc.add(wall);
+  /* doorway hole: light room behind */
+  const room = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 4.4), new THREE.MeshBasicMaterial({ color: new THREE.Color('#fbe3ec') })); room.position.set(0, 1.2, -.24); sc.add(room);
+  const glassM = new THREE.MeshStandardMaterial({ color: 0x0c0b0c, roughness: .05, metalness: .8, transparent: true, opacity: .92 });
+  const doors = [-1, 1].map((s) => { const d = new THREE.Mesh(new THREE.BoxGeometry(1.6, 4.4, .06), glassM); d.position.set(s * .8, 1.2, -.2); sc.add(d); const h = new THREE.Mesh(new THREE.BoxGeometry(.05, .8, .08), M('#f4eef0', { metalness: 1, roughness: .2 })); h.position.set(-s * .65, 0, .06); d.add(h); return d; });
+  const sign = (() => { const c = document.createElement('canvas'); c.width = 1024; c.height = 160; const g = c.getContext('2d'); g.fillStyle = '#121012'; g.fillRect(0, 0, 1024, 160); g.fillStyle = '#ffffff'; g.font = '600 96px "Bodoni Moda", serif'; g.textAlign = 'center'; g.fillText('FLORISTERÍA', 512, 118); const t = new THREE.CanvasTexture(c); t.encoding = THREE.sRGBEncoding; return new THREE.Mesh(new THREE.PlaneGeometry(4.2, .66), new THREE.MeshBasicMaterial({ map: t })); })();
+  sign.position.set(0, 4.2, -.2); sc.add(sign);
+  /* blossom arch: clusters of small flowers along an arch curve */
+  const pinks = ['#f4a7c3', '#f7c4d6', '#e98bb0', '#fde2ec', '#d96b97'].map((c) => M(c, { roughness: .6 }));
+  const bG = new THREE.IcosahedronGeometry(.1, 1);
+  const arch = new THREE.Group(); sc.add(arch);
+  const blooms = [];
+  pinks.forEach((m) => { const im = new THREE.InstancedMesh(bG, m, 460); im.count = 0; arch.add(im); blooms.push(im); });
+  const d = new THREE.Object3D(); let k = 0;
+  const pt = (u) => { if (u < .3) { const v = u / .3; return [-2.2, -1 + v * 4.2]; } if (u > .7) { const v = (u - .7) / .3; return [2.2, 3.2 - v * 4.2]; } const v = (u - .3) / .4, a = Math.PI - v * Math.PI; return [Math.cos(a) * 2.2, 3.2 + Math.sin(a) * 1.4]; };
+  for (let i = 0; i < 2300; i++) { const u = Math.random(); const [x, y] = pt(u); const rr = .35 * Math.sqrt(Math.random()), a = Math.random() * 6.28; d.position.set(x + Math.cos(a) * rr, y + Math.sin(a) * rr, .1 + Math.random() * .5); d.scale.setScalar(.5 + Math.random() * .8); d.rotation.set(Math.random() * 3, Math.random() * 3, 0); d.updateMatrix(); const im = blooms[i % blooms.length]; if (im.count < 460) im.setMatrixAt(im.count++, d.matrix); k++; }
+  blooms.forEach((b) => (b.instanceMatrix.needsUpdate = true));
+  const leafM = M('#4f7a4a'); const lv = new THREE.InstancedMesh(new THREE.ConeGeometry(.06, .3, 4), leafM, 300);
+  for (let i = 0; i < 300; i++) { const [x, y] = pt(Math.random()); d.position.set(x + (Math.random() - .5) * .8, y + (Math.random() - .5) * .8, .05); d.rotation.set(Math.random() * 3, Math.random() * 3, Math.random() * 3); d.scale.setScalar(1); d.updateMatrix(); lv.setMatrixAt(i, d.matrix); } arch.add(lv);
+  /* drifting petals */
+  const PN = 160, pp = new Float32Array(PN * 3); for (let i = 0; i < PN; i++) { pp[i * 3] = (Math.random() - .5) * 10; pp[i * 3 + 1] = Math.random() * 7 - 1; pp[i * 3 + 2] = Math.random() * 6; }
+  const pg = new THREE.BufferGeometry(); pg.setAttribute('position', new THREE.BufferAttribute(pp, 3));
+  const pts = new THREE.Points(pg, new THREE.PointsMaterial({ color: new THREE.Color('#f7c4d6'), size: .09 })); sc.add(pts);
+  BF.fit(r, cam, cv, (w, h) => { cam.fov = w / h < .8 ? 64 : 40; });
+  let go = 0, mx = 0; addEventListener('pointermove', (e) => { mx = e.clientX / innerWidth - .5; });
+  BF.loop(cv, (t) => {
+    const e = go * go * (3 - 2 * go);
+    doors.forEach((dd, i) => { dd.position.x = (i ? 1 : -1) * (.8 + Math.min(1, go * 1.6) * 1.7); });
+    const p = pg.attributes.position; for (let i = 0; i < PN; i++) { let y = p.getY(i) - .006 - go * .02, z = p.getZ(i) + go * .08; if (y < -1.5 || z > 9) { y = 6; z = Math.random() * 3; } p.setY(i, y); p.setZ(i, z); p.setX(i, p.getX(i) + Math.sin(t + i) * .002); } p.needsUpdate = true;
+    arch.rotation.z = Math.sin(t * .6) * .004;
+    cam.position.set(mx * (1 - e) * 1.4, 1.2 + Math.sin(t * .5) * .05, 10.5 - e * 11); cam.lookAt(0, .7 + e * .5, -2);
+    glow.intensity = 1.6 + go * 5;
+    r.render(sc, cam);
+  });
+  BF.gate((done) => { const s0 = performance.now(); const step = () => { const k2 = (performance.now() - s0) / 2300; go = Math.min(1, k2); if (k2 < 1) requestAnimationFrame(step); else { $('#gate').classList.add('out'); setTimeout(done, 750); } }; step(); });
+})();
+</script>
+</body>
+</html>

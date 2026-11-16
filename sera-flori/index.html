@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ro" data-key="sera">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Sera cu flori, Bardar</title>
+<meta name="description" content="Sera cu flori din Bardar, lângă traseul E584. Mușcate, petunii, lalele, crizanteme și hortensii crescute în seră. Deschis zilnic 08 la 21. Rezervă plantele pe WhatsApp.">
+<meta property="og:title" content="Sera cu flori, Bardar">
+<meta property="og:description" content="Plante crescute cu drag. 4,8 din 44 de recenzii. Deschis zilnic.">
+<meta property="og:image" content="img/house.webp">
+<meta name="theme-color" content="#f4f1e6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23234d33'/%3E%3Cpath d='M10 50V30a22 22 0 0 1 44 0v20' fill='none' stroke='%23f4f1e6' stroke-width='4'/%3E%3Ccircle cx='32' cy='38' r='8' fill='%23e0403a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "a real greenhouse by the road in Bardar: the site lets you walk down its aisle in 3D, season by season, and reserve pots before you drive over" · vibe: "glass and white steel, leaf green, geranium red, morning light, hand-written price tags" · posture: committed · axes: light-cream/soft-serif-display/green-red · nav: arch mark, three links, reserve · footer: deep green band with the hours · hero: full photo of the geranium tables with a short promise · signature: 3D greenhouse walk driven by scroll, four seasons along the aisle */
+/* Hallmark · waive 24b · spacing hand-set to the greenhouse walk and the catalog · rhythm follows the sera and the catalogul */
+/* critique: a greenhouse sells by visit and by season; the site tells you what blooms now, what a pot costs and lets you reserve before driving out */
+:root{
+  --cream:#f4f1e6; --cream-2:#e9e4d2; --card:#fffdf6; --ink:#1d2b22; --ink-2:#3d4c42; --mute:#67705f; --line:#d8d1b8;
+  --leaf:#234d33; --leaf-2:#2f6443; --sprout:#9cc56a; --red:#c8322c; --red-deep:#9d231e; --sun:#f1c84b;
+  --veil:rgba(29,43,34,.55);
+  --font-display:'Young Serif',serif; --font-body:'Figtree',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:1.02;text-wrap:balance}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--cream);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:14px;border:2px solid var(--red);background:var(--red);color:var(--card);font:700 17px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn:active,.chip:active,.qty button:active{transform:translateY(1px)}
+button:disabled{background:var(--cream-2);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--card);border-color:var(--card)}
+.btn.ghost:hover{background:var(--card);color:var(--ink)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;color:var(--card);transition:background-color .3s var(--ease),color .3s var(--ease)}
+.nav.solid{background:var(--cream);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:72px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 23px/1 var(--font-display)}
+.wm svg{width:30px;height:30px}
+.links{display:flex;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;padding:8px 0}
+.links a:hover{text-decoration:underline;text-underline-offset:6px}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;font:700 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--card)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;height:100svh;min-height:620px;color:var(--card);display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--veil) 0,transparent 30%,transparent 45%,var(--ink) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(40px,8vh,90px)}
+.hero h1{font-size:clamp(54px,8.6vw,138px)}
+.hero p{max-width:28em;font-size:21px;margin:16px 0 26px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.tagrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--card);color:var(--ink);font-weight:700;font-size:15px;padding:8px 14px;border-radius:6px;position:relative}
+.tag::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--leaf);margin-right:8px;vertical-align:middle}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(42px,6vw,90px)}
+.h2 .ac{color:var(--red)}
+.lede{color:var(--ink-2);max-width:32em;margin:16px 0 0}
+
+/* greenhouse walk */
+.walk{position:relative;height:340vh;background:var(--leaf);padding:0}
+.walk .stick{position:sticky;top:0;height:100svh;overflow:hidden}
+#gh{position:absolute;inset:0;width:100%;height:100%}
+.walk .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.no-gl .walk{height:auto}.no-gl .walk .stick{position:relative}.no-gl .walk .fb{display:block}
+.walk .head{position:absolute;left:0;right:0;top:92px;z-index:2;color:var(--ink)}
+.walk .head .h2 .ac{color:var(--red)}
+.season{position:absolute;left:var(--gut);bottom:clamp(24px,6vh,60px);z-index:2;max-width:420px;background:var(--card);color:var(--ink);border-radius:20px;padding:20px 22px;display:grid;gap:6px;box-shadow:0 20px 50px var(--veil)}
+.season b{font:400 34px/1 var(--font-display)}
+.season span{font-size:14px;font-weight:700;color:var(--leaf-2)}
+.season p{margin:0;color:var(--ink-2);font-size:16px}
+.steps{position:absolute;right:var(--gut);bottom:clamp(24px,6vh,60px);z-index:2;display:flex;gap:6px}
+.steps i{width:34px;height:6px;border-radius:3px;background:var(--leaf-2)}
+.steps i.on{background:var(--sun)}
+@media (max-width:700px){.season{right:var(--gut)}.steps{top:84px;bottom:auto}}
+
+/* catalog */
+.cat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:44px}
+.pl{background:var(--card);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line)}
+.pl img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.pl div{padding:16px;display:grid;gap:6px;flex:1}
+.pl h3{font-size:24px}
+.pl p{margin:0;font-size:15px;color:var(--ink-2)}
+.pl .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:8px}
+.pl .pr{font-weight:700;font-size:19px}
+.pl .pr small{font-weight:400;font-size:13px;color:var(--mute)}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--cream);color:var(--ink);font:700 18px/1 var(--font-body);cursor:pointer}
+.qty output{min-width:22px;text-align:center;font-weight:700}
+.pnote{margin:18px 0 0;font-size:14px;color:var(--mute)}
+@media (max-width:1000px){.cat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.cat{grid-template-columns:minmax(0,1fr)}}
+
+.photos{background:var(--cream-2)}
+.mas{columns:4 220px;column-gap:12px;margin-top:40px}
+.mas img{width:100%;margin:0 0 12px;border-radius:16px;break-inside:avoid}
+
+.revs .rg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.rq{margin:0;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.rq p{margin:0;font-size:19px}
+.rq span{margin-top:auto;font-size:14px;color:var(--mute)}
+@media (max-width:900px){.revs .rg{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,3.4vw,38px);display:grid;gap:20px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:15px;margin-bottom:10px}
+.basket{background:var(--cream);border-radius:14px;padding:14px 16px;font-size:16px;min-height:56px}
+.basket ul{margin:0;padding:0 0 0 18px}
+.basket .empty{color:var(--mute);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--leaf);border-color:var(--leaf);color:var(--card)}
+.chip[aria-pressed="true"] small{color:var(--cream-2)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:700}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red-deep);font-weight:700;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+.side img{margin-top:26px;border-radius:20px;aspect-ratio:4/5;object-fit:cover;width:100%}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}.side img{display:none}}
+
+.contact{background:var(--leaf);color:var(--card)}
+.contact .h2 .ac{color:var(--sun)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:700;font-size:14px;color:var(--sprout)}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--sprout);border-radius:12px;text-decoration:none;font-weight:500}
+.soc a:hover{background:var(--card);color:var(--ink)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;max-height:560px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--ink);color:var(--cream-2);padding:28px 0 110px;font-size:14px}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--ink);border-radius:16px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:12px;color:var(--cream);text-decoration:none;font-weight:700}
+.mbar a.p{background:var(--red)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav" data-solid="300"><div class="wrap">
+  <a class="wm" href="#top" aria-label="Sera cu flori"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 21V11a9 9 0 0 1 18 0v10M3 21h18M12 2v19M7 6v15M17 6v15"/></svg>Sera cu flori</a>
+  <nav class="links" aria-label="Meniu"><a href="#sera" data-ru="Теплица">Sera</a><a href="#catalog" data-ru="Каталог">Catalog</a><a href="#contact" data-ru="Как доехать">Cum ajungi</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#rezervare" data-ru="Забронировать">Rezervă plante</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hero.webp" alt="Mese pline de mușcate roșii, roz și albe în seră" width="1200" height="1600">
+  <div class="wrap">
+    <h1 data-ru="Цветы, выращенные с любовью">Flori crescute cu drag</h1>
+    <p data-ru="Теплица в Бардаре, у трассы E584. Каждый день с 08 до 21.">O seră întreagă în Bardar, lângă traseul E584. Zilnic, 08 la 21.</p>
+    <div class="acts"><a class="btn" href="#rezervare" data-ru="Забронировать растения">Rezervă plante</a><a class="btn ghost" href="#sera" data-ru="Пройтись по теплице">Plimbă-te prin seră</a></div>
+    <div class="tagrow"><span class="tag">4,8 · 44 <span data-ru="отзыва">recenzii</span></span><span class="tag" data-ru="Каждый день 08 до 21">Zilnic 08 la 21</span><span class="tag" data-ru="Горшки от 20 лей">Ghivece de la 20 lei</span></div>
+  </div>
+</section>
+
+<section class="walk" id="sera" aria-label="Plimbare prin seră">
+  <div class="stick">
+    <img class="fb" src="img/house2-s.webp" alt="Interiorul serei cu rânduri de flori">
+    <canvas id="gh" role="img" aria-label="Seră 3D cu rânduri de flori pe anotimpuri"></canvas>
+    <div class="head"><div class="wrap"><h2 class="h2"><span data-ru="Пройдитесь">Plimbă-te</span> <span class="ac" data-ru="по теплице">prin seră</span></h2></div></div>
+    <div class="season" aria-live="polite"><span id="sN"></span><b id="sT"></b><p id="sD"></p></div>
+    <div class="steps" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+
+<section id="catalog">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Что растёт,">Ce crește,</span> <span class="ac" data-ru="и почём">și cât costă</span></h2>
+    <p class="lede rv" data-ru="Отметьте, что хотите, и мы отложим к вашему приезду.">Pune deoparte ce-ți place și te așteptăm cu ele pregătite.</p>
+    <div class="cat" id="cat"></div>
+    <p class="pnote" data-ru="Цены ориентировочные, для демо. Наличие зависит от сезона.">Prețuri orientative, pentru prezentare. Disponibilitatea depinde de sezon.</p>
+  </div>
+</section>
+
+<section class="photos">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Как в">Ca în</span> <span class="ac" data-ru="саду">grădina bunicii</span></h2>
+    <div class="mas">
+      <img class="rv" src="img/house-s.webp" alt="Sera cu flori agățate și rânduri de ghivece" loading="lazy">
+      <img class="rv" src="img/tulip2-s.webp" alt="Lalele roz în seră" loading="lazy">
+      <img class="rv" src="img/hydrows-s.webp" alt="Rânduri de hortensii albe și roșii" loading="lazy">
+      <img class="rv" src="img/hang-s.webp" alt="Ghivece suspendate în seră" loading="lazy">
+      <img class="rv" src="img/mums3-s.webp" alt="Crizanteme roșii și mov" loading="lazy">
+      <img class="rv" src="img/shop-s.webp" alt="Intrarea în magazinul serei" loading="lazy">
+      <img class="rv" src="img/baskets-s.webp" alt="Coșuri cu hortensii" loading="lazy">
+      <img class="rv" src="img/tags-s.webp" alt="Flori cu etichete de preț" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Говорят те,">Spun cei</span> <span class="ac" data-ru="кто возвращается">care revin</span></h2>
+    <div class="rg">
+      <figure class="rq rv"><p>„În fiecare an cumpăr flori de aici și sunt mereu superbe. … Iar vânzătoarea Iuliana este foarte amabilă, atentă și profesionistă.”</p><span>Ina Goncear</span></figure>
+      <figure class="rq rv"><p>„Foarte mare alegere de plante si flori. Stăpânii sunt foarte receptivi si prietenoși. Mersi mult. Mai venim.”</p><span>Ghenadie Șolari</span></figure>
+      <figure class="rq rv"><p>„Обожаю это место. Не могу проехать мимо. Однолетние и многолетние растения… выращенные с любовью”</p><span>Ольга Калягина</span></figure>
+      <figure class="rq rv"><p>„Am cumpărat mușcate, petunii, sulfii, alizee… Plantele sunt sănătoase si frumoase”</p><span>Elena Plamadeala</span></figure>
+      <figure class="rq rv"><p>„Flori deosebit de frumoase și sunt foarte amabili și politicoși! Recomand cu mare drag !”</p><span>Nataly Rosioru</span></figure>
+      <figure class="rq rv"><p>„очень большой выбор!!! и цены хорошие”</p><span>Yuri Man</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="rezervare" style="padding-top:0">
+  <div class="wrap book">
+    <div class="side rv">
+      <h2 class="h2"><span data-ru="Отложим">Ți le punem</span> <span class="ac" data-ru="для вас">deoparte</span></h2>
+      <p class="lede" data-ru="Выберите день приезда. Подтвердим в WhatsApp.">Alege ziua în care treci. Confirmăm pe WhatsApp.</p>
+      <img src="img/hydra-s.webp" alt="Coș cu hortensii albastre" loading="lazy">
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Ваша корзина">Coșul tău</legend><div class="basket" id="basket" aria-live="polite"></div></fieldset>
+      <fieldset><legend data-ru="Когда заедете">Când treci</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Бардар,">Bardar,</span> <span class="ac" data-ru="у трассы E584">la traseul E584</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>E584, Bardar, raionul Ialoveni (WMFW+J4)</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37368851153">+373 68 851 153</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Каждый день, 08:00 до 21:00">Zilnic, 08:00 la 21:00</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37368851153" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37368851153"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Sera+cu+flori+Flowers+Bardar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-ru="Маршрут">Traseu</span></a>
+        <a href="https://www.facebook.com/search/top?q=sera%20cu%20flori%20bardar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a>
+      </div>
+    </div>
+    <img class="rv" src="img/yard-s.webp" alt="Curtea serei cu crizanteme în ghivece" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 Sera cu flori, Bardar</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37368851153" data-ru="Позвонить">Sună</a><a class="p" href="#rezervare" data-ru="Забронировать">Rezervă</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  const P = [
+    { ro: 'Mușcate', ru: 'Герань', dro: 'Roșii, roz, albe. Pentru balcon.', dru: 'Красная, розовая, белая. Для балкона.', p: 35, img: 'hero' },
+    { ro: 'Petunii suspendate', ru: 'Ампельные петунии', dro: 'Ghiveci agățat, înflorit.', dru: 'Подвесной горшок, в цвету.', p: 120, img: 'hang' },
+    { ro: 'Lalele în ghiveci', ru: 'Тюльпаны в горшке', dro: 'Primăvara, mai multe culori.', dru: 'Весной, разные цвета.', p: 45, img: 'tulip' },
+    { ro: 'Crizanteme', ru: 'Хризантемы', dro: 'Toamna, tufe bogate.', dru: 'Осенью, пышные кусты.', p: 80, img: 'mums' },
+    { ro: 'Hortensie', ru: 'Гортензия', dro: 'Albastră, roz sau albă.', dru: 'Голубая, розовая или белая.', p: 250, img: 'hydra2' },
+    { ro: 'Coș cu hortensii', ru: 'Корзина гортензий', dro: 'Gata de oferit.', dru: 'Готово в подарок.', p: 450, img: 'baskets' },
+    { ro: 'Răsaduri de flori', ru: 'Рассада цветов', dro: 'Anuale, pe tăviță.', dru: 'Однолетники, в кассете.', p: 20, img: 'rows' },
+    { ro: 'Flori de grădină', ru: 'Садовые цветы', dro: 'Perene, pentru straturi.', dru: 'Многолетники для клумб.', p: 60, img: 'petunia' },
+  ];
+  const q = P.map(() => 0);
+  $('#cat').innerHTML = P.map((p, i) => `<article class="pl rv"><img src="img/${p.img}-s.webp" alt="${p.ro}" loading="lazy"><div><h3>${p.ro}</h3><p>${p.dro}</p><div class="row"><span class="pr"><small data-k="from">de la</small> ${p.p} lei</span><span class="qty"><button type="button" data-i="${i}" data-d="-1" aria-label="Mai puțin ${p.ro}">−</button><output id="q${i}">0</output><button type="button" data-i="${i}" data-d="1" aria-label="Mai mult ${p.ro}">+</button></span></div></div></article>`).join('');
+  const renderBasket = () => { const items = P.map((p, i) => [p, q[i]]).filter(([, n]) => n); $('#basket').innerHTML = items.length ? '<ul>' + items.map(([p, n]) => `<li>${T(p.ro, p.ru)} × ${n}</li>`).join('') + '</ul>' : `<p class="empty">${T('Coșul e gol. Apasă + în catalog, sau scrie ce cauți.', 'Корзина пуста. Нажмите + в каталоге или напишите, что ищете.')}</p>`; };
+  $('#cat').addEventListener('click', (e) => { const b = e.target.closest('.qty button'); if (!b) return; const i = +b.dataset.i; q[i] = Math.max(0, Math.min(50, q[i] + +b.dataset.d)); $('#q' + i).value = q[i]; renderBasket(); });
+  BF.onLang(() => { $$('#cat .pl').forEach((el, i) => { el.querySelector('h3').textContent = T(P[i].ro, P[i].ru); el.querySelector('p').textContent = T(P[i].dro, P[i].dru); el.querySelector('[data-k=from]').textContent = T('de la', 'от'); }); renderBasket(); });
+  BF.days($('#days'), { n: 7 });
+  BF.form('#bk', { phone: '37368851153', msg: () => { const items = P.map((p, i) => [p, q[i]]).filter(([, n]) => n); return `Bună ziua! Aș vrea să rezerv plante la Sera cu flori (Bardar).\n${items.length ? items.map(([p, n]) => `• ${p.ro} × ${n}`).join('\n') : 'Încă aleg, vă rog să-mi spuneți ce aveți acum.'}\nTrec: ${BF.dayText(BF.val('day'))}`; } });
+  BF.init();
+
+  /* ===== 3D greenhouse walk ===== */
+  const S = [
+    { ro: 'Primăvara', ru: 'Весна', tro: 'Lalele', tru: 'Тюльпаны', dro: 'Rânduri de lalele în ghivece, roșii și roz.', dru: 'Ряды тюльпанов в горшках, красные и розовые.', c: ['#d8323a', '#f06aa0', '#ffb3c8', '#f2c94c'] },
+    { ro: 'Vara', ru: 'Лето', tro: 'Mușcate și petunii', tru: 'Герань и петунии', dro: 'Mesele se umplu de roșu, roz și alb.', dru: 'Столы в красном, розовом и белом.', c: ['#e0403a', '#ff7aa8', '#ffffff', '#c13584'] },
+    { ro: 'Toamna', ru: 'Осень', tro: 'Crizanteme', tru: 'Хризантемы', dro: 'Tufe rotunde, aramii, mov și galbene.', dru: 'Круглые кусты, медные, лиловые, жёлтые.', c: ['#c8642c', '#9b4f9e', '#f2c94c', '#b7322c'] },
+    { ro: 'Tot anul', ru: 'Круглый год', tro: 'Hortensii', tru: 'Гортензии', dro: 'Albastre, roz și albe, în ghiveci sau coș.', dru: 'Голубые, розовые и белые, в горшке или корзине.', c: ['#7ea6e6', '#f2a6c2', '#ffffff', '#a8b8f0'] },
+  ];
+  let si = -1;
+  const showS = (i) => { if (i === si) return; si = i; const s = S[i]; $('#sN').textContent = T(s.ro, s.ru); $('#sT').textContent = T(s.tro, s.tru); $('#sD').textContent = T(s.dro, s.dru); $$('.steps i').forEach((x, k) => x.classList.toggle('on', k <= i)); };
+  BF.onLang(() => { const k = si; si = -1; showS(Math.max(0, k)); });
+  const cv = $('#gh'), r = BF.gl(cv); if (!r) return;
+  const sc = new THREE.Scene(); sc.background = new THREE.Color('#dfe9dc'); sc.fog = new THREE.Fog(0xdfe9dc, 8, 34);
+  const cam = new THREE.PerspectiveCamera(58, 1, .1, 80);
+  sc.add(new THREE.HemisphereLight(0xffffff, 0x5a7a4a, .9));
+  const sun = new THREE.DirectionalLight(0xfff2d6, .8); sun.position.set(4, 10, 6); sc.add(sun);
+  const M = (c, o = {}) => { const m = new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: .7 }, o)); m.color.convertSRGBToLinear(); return m; };
+  const steel = M('#f4f4f2', { metalness: .4, roughness: .3 }), L = 40;
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(10, L + 10), M('#c9c0a8', { roughness: 1 })); floor.rotation.x = -Math.PI / 2; floor.position.z = -L / 2 + 4; sc.add(floor);
+  const path = new THREE.Mesh(new THREE.PlaneGeometry(1.6, L + 10), M('#e8e2d0', { roughness: 1 })); path.rotation.x = -Math.PI / 2; path.position.set(0, .01, -L / 2 + 4); sc.add(path);
+  for (let z = 4; z > -L; z -= 3) { const arch = new THREE.Mesh(new THREE.TorusGeometry(4.2, .05, 6, 40, Math.PI), steel); arch.position.set(0, 1.4, z); sc.add(arch); [-4.2, 4.2].forEach((x) => { const post = new THREE.Mesh(new THREE.CylinderGeometry(.05, .05, 1.4, 6), steel); post.position.set(x, .7, z); sc.add(post); }); }
+  for (let a = 0; a <= 8; a++) { const t = a / 8 * Math.PI; const purlin = new THREE.Mesh(new THREE.CylinderGeometry(.03, .03, L + 6, 6), steel); purlin.rotation.x = Math.PI / 2; purlin.position.set(Math.cos(t) * 4.2, 1.4 + Math.sin(t) * 4.2, -L / 2 + 2); sc.add(purlin); }
+  const glass = new THREE.Mesh(new THREE.CylinderGeometry(4.25, 4.25, L + 6, 32, 1, true, -Math.PI / 2, Math.PI), new THREE.MeshStandardMaterial({ color: 0xffffff, transparent: true, opacity: .12, side: THREE.DoubleSide, roughness: .1 })); glass.rotation.x = Math.PI / 2; glass.rotation.y = Math.PI / 2; glass.position.set(0, 1.4, -L / 2 + 2); sc.add(glass);
+  const shade = new THREE.Mesh(new THREE.CylinderGeometry(4.15, 4.15, L + 6, 32, 1, true, -Math.PI / 2.6, Math.PI / 1.3), new THREE.MeshStandardMaterial({ color: new THREE.Color('#3f8f7a').convertSRGBToLinear(), transparent: true, opacity: .25, side: THREE.DoubleSide })); shade.rotation.copy(glass.rotation); shade.position.copy(glass.position); sc.add(shade);
+  /* tables with pots and blooms; four zones along the aisle, one per season */
+  const potG = new THREE.CylinderGeometry(.16, .12, .22, 10), bloomG = new THREE.IcosahedronGeometry(.17, 1), leafG = new THREE.IcosahedronGeometry(.19, 1);
+  const potM = M('#b5633b'), leafM = M('#4f8a3c');
+  const tableM = M('#9aa3a0', { metalness: .5, roughness: .4 });
+  const zoneLen = L / 4;
+  S.forEach((s, zi) => { const mats = s.c.map((c) => M(c, { roughness: .55 }));
+    const z0 = 2 - zi * zoneLen;
+    [-1, 1].forEach((side) => { const tbl = new THREE.Mesh(new THREE.BoxGeometry(2.4, .08, zoneLen - .6), tableM); tbl.position.set(side * 2.2, .8, z0 - zoneLen / 2); sc.add(tbl);
+      const n = 6 * Math.round((zoneLen - 1) / .45); const pots = new THREE.InstancedMesh(potG, potM, n), leaves = new THREE.InstancedMesh(leafG, leafM, n); const blooms = mats.map(() => new THREE.InstancedMesh(bloomG, mats[0], n)); blooms.forEach((b, k) => (b.material = mats[k]));
+      const d = new THREE.Object3D(); const cnt = mats.map(() => 0); let k = 0;
+      for (let row = 0; row < 6; row++) for (let z = 0; z < Math.round((zoneLen - 1) / .45); z++) { const x = side * 2.2 + (row - 2.5) * .38, zz = z0 - .5 - z * .45;
+        d.position.set(x, .95, zz); d.rotation.set(0, 0, 0); d.scale.setScalar(1); d.updateMatrix(); pots.setMatrixAt(k, d.matrix);
+        d.position.y = 1.14; d.scale.set(1.2, .8, 1.2); d.updateMatrix(); leaves.setMatrixAt(k, d.matrix);
+        const ci = (row * 7 + z * 3 + zi) % mats.length; d.position.y = 1.26 + (zi === 0 ? .12 : 0); d.scale.setScalar(zi === 2 || zi === 3 ? 1.35 : .9); d.rotation.set(row, z, 0); d.updateMatrix(); blooms[ci].setMatrixAt(cnt[ci]++, d.matrix); k++; }
+      blooms.forEach((b, i) => { b.count = cnt[i]; sc.add(b); }); sc.add(pots, leaves); });
+    /* hanging baskets above */
+    for (let z = z0 - 1.5; z > z0 - zoneLen; z -= 3) [-1.4, 1.4].forEach((x) => { const pot = new THREE.Mesh(new THREE.SphereGeometry(.28, 10, 8, 0, Math.PI * 2, Math.PI / 2, Math.PI / 2), M('#2d3b2f')); pot.position.set(x, 3.6, z); sc.add(pot); const fl = new THREE.Mesh(new THREE.IcosahedronGeometry(.36, 1), mats[1]); fl.position.set(x, 3.55, z); fl.scale.set(1, .7, 1); sc.add(fl); const wire = new THREE.Mesh(new THREE.CylinderGeometry(.01, .01, 1, 4), steel); wire.position.set(x, 4.1, z); sc.add(wire); });
+  });
+  BF.fit(r, cam, cv, (w, h) => { cam.fov = w / h < .8 ? 72 : 58; });
+  const sec = $('#sera'); let prog = 0, cur = 0, mx = 0;
+  const onScroll = () => { const b = sec.getBoundingClientRect(); prog = Math.min(1, Math.max(0, -b.top / (b.height - innerHeight))); showS(Math.min(3, Math.floor(prog * 4 * .999))); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll(); showS(0);
+  addEventListener('pointermove', (e) => { mx = e.clientX / innerWidth - .5; });
+  BF.loop(cv, (t) => {
+    cur += (prog - cur) * (BF.reduce ? 1 : .08);
+    cam.position.set(Math.sin(cur * 6) * .25, 1.75 + Math.sin(t * .8) * .02, 5 - cur * (L - 6));
+    cam.lookAt(mx * 3, 1.3, cam.position.z - 6);
+    r.render(sc, cam);
+  });
+})();
+</script>
+</body>
+</html>

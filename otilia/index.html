@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ro" data-key="otilia">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>OTÍLIA flowers, Rossa Room</title>
+<meta name="description" content="OTÍLIA flowers, Rossa Room, str. M. Eminescu 184, Peresecina, Orhei. Trandafiri la bucată, buchete și livrare. 4,9 din 24 de recenzii. Comandă pe WhatsApp.">
+<meta property="og:title" content="OTÍLIA flowers, Rossa Room">
+<meta property="og:description" content="Trandafiri proaspeți în Peresecina. Comandă pe WhatsApp.">
+<meta property="og:image" content="img/roses.webp">
+<meta name="theme-color" content="#2b0710">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232b0710'/%3E%3Ctext x='32' y='42' font-family='serif' font-size='30' text-anchor='middle' fill='%23f6ede4'%3ERR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "a village florist called the Red Room: the site opens on a single rose that blooms in 3D and swallows the camera, then sells roses by the stem count people actually ask for" · vibe: "wine dark, rose red, cream paper, one line of lilac neon like their sign at night" · posture: committed · axes: dark-wine/thin-didone-display/red-lilac · nav: RR monogram, three links, order · footer: wine band with the neon line · hero: gate first (3D rose blooms), then the night photo of the sign · signature: 3D blooming rose gate and a stem counter that rebuilds the bouquet price */
+/* Hallmark · waive 24b · spacing hand-set around the rose counter · rhythm follows the trandafiri and the buchetele */
+/* critique: most people here order roses by count for a date or a birthday; the site makes the count the first decision and shows the price as it changes */
+:root{
+  --wine:#2b0710; --wine-2:#3f0d19; --wine-3:#561326; --cream:#f6ede4; --cream-2:#eaddd0; --ink:#f6ede4; --mute:#c7b1ab; --line:#5a1a2a;
+  --rossa:#e0244a; --rossa-deep:#b4163a; --neon:#cfa6ff; --leaf:#5e8a5a; --err:#ff8a8a;
+  --veil:rgba(43,7,16,.62);
+  --font-display:'Italiana',serif; --font-body:'Jost',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--wine);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+.gated body{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:1;text-wrap:balance}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--cream);color:var(--wine);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:0;border:1px solid var(--rossa);background:var(--rossa);color:var(--cream);font:600 16px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--rossa-deep);border-color:var(--rossa-deep)}
+.btn:active,.chip:active,.cnt button:active{transform:translateY(1px)}
+button:disabled{background:var(--wine-2);color:var(--mute);border-color:var(--line);cursor:not-allowed}
+.btn.ghost{background:transparent;border-color:var(--cream)}
+.btn.ghost:hover{background:var(--cream);color:var(--wine)}
+
+#gate{position:fixed;inset:0;z-index:100;background:var(--wine);display:grid;place-items:end center;transition:opacity .8s var(--ease)}
+#gate canvas{position:absolute;inset:0;width:100%;height:100%}
+#gate .gtext{position:relative;z-index:2;text-align:center;padding:0 20px clamp(30px,8vh,80px);display:grid;gap:14px;justify-items:center}
+#gate .gtext b{font:400 clamp(44px,8vw,96px)/1 var(--font-display)}
+#gate .gtext p{margin:0;color:var(--mute)}
+#gate .skipg{background:none;border:0;color:var(--mute);font:400 15px/1 var(--font-body);text-decoration:underline;cursor:pointer;min-height:40px}
+#gate.going .gtext{opacity:0;transition:opacity .35s var(--ease)}
+#gate.out{opacity:0;pointer-events:none}
+
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s var(--ease)}
+.nav.solid{background:var(--wine);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:74px}
+.wm{display:flex;align-items:center;gap:12px;text-decoration:none;font:400 24px/1 var(--font-display)}
+.wm i{font:400 18px/1 var(--font-display);font-style:normal;border:1px solid var(--cream);padding:7px 6px}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{text-decoration:none;padding:8px 0}
+.links a:hover{color:var(--neon)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border:1px solid var(--line);background:transparent;color:var(--ink);font:600 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--cream);color:var(--wine)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{position:relative;height:100svh;min-height:620px;display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--wine) 0,var(--veil) 40%,transparent 75%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(40px,9vh,100px)}
+.hero h1{font-size:clamp(60px,10vw,168px)}
+.hero h1 span{display:block;font-size:.4em;color:var(--neon);margin-top:.25em}
+.hero p{max-width:28em;font-size:20px;margin:18px 0 26px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.h2{font-size:clamp(44px,6.4vw,100px)}
+.h2 .ac{color:var(--rossa)}
+.lede{color:var(--mute);max-width:32em;margin:16px 0 0}
+
+/* rose counter */
+.counter{background:var(--cream);color:var(--wine)}
+.counter .lede{color:var(--wine-3)}
+.cg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);margin-top:44px;align-items:center}
+.cg img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.big{font:400 clamp(110px,18vw,240px)/.85 var(--font-display);color:var(--rossa)}
+.big small{font:500 18px/1 var(--font-body);color:var(--wine-3);display:block;margin-top:12px}
+.cnt{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 16px}
+.cnt button{min-width:64px;min-height:52px;border:1px solid var(--wine);background:transparent;color:var(--wine);font:600 18px/1 var(--font-body);cursor:pointer}
+.cnt button[aria-pressed="true"]{background:var(--wine);color:var(--cream)}
+.cc{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.cc .chip{border-color:var(--wine);color:var(--wine)}
+.cc .chip[aria-pressed="true"]{background:var(--rossa);border-color:var(--rossa);color:var(--cream)}
+.tot{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-top:1px solid var(--cream-2);padding-top:16px}
+.tot b{font:400 48px/1 var(--font-display)}
+.tot span{color:var(--wine-3);font-size:15px}
+@media (max-width:900px){.cg{grid-template-columns:minmax(0,1fr)}}
+
+.bqs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:44px}
+.bqs figure{margin:0}
+.bqs img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.bqs figcaption{margin-top:10px;display:flex;justify-content:space-between;gap:10px}
+.bqs figcaption b{font:400 24px/1.1 var(--font-display)}
+.bqs figcaption span{color:var(--mute);white-space:nowrap}
+.pnote{margin:18px 0 0;font-size:14px;color:var(--mute)}
+@media (max-width:900px){.bqs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.room{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.room img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.neon{display:inline-block;margin-top:24px;font:400 30px/1 var(--font-display);color:var(--neon);text-shadow:0 0 12px var(--neon)}
+.hours{margin:22px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 22px}
+.hours dt{color:var(--mute)}
+.hours dd{margin:0}
+@media (max-width:900px){.room{grid-template-columns:minmax(0,1fr)}}
+
+.revs{background:var(--wine-2)}
+.rg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.rq{margin:0;background:var(--wine-2);padding:26px;display:flex;flex-direction:column;gap:12px}
+.rq p{margin:0;font-size:19px}
+.rq span{margin-top:auto;color:var(--mute);font-size:14px}
+@media (max-width:900px){.rg{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--wine-2);border:1px solid var(--line);padding:clamp(22px,3.4vw,38px);display:grid;gap:20px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:600;font-size:15px;margin-bottom:10px}
+.sum{background:var(--wine);padding:14px 16px;border-left:2px solid var(--rossa)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border:1px solid var(--line);background:transparent;color:var(--ink);font:500 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--cream);border-color:var(--cream);color:var(--wine)}
+.chip[aria-pressed="true"] small{color:var(--wine-3)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:600}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:1px solid var(--line);background:var(--wine);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px;border-radius:0}
+input[aria-invalid="true"]{border-color:var(--err)}
+.err{color:var(--err);font-weight:600;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}}
+
+.contact{background:var(--cream);color:var(--wine)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:600;font-size:14px;color:var(--wine-3)}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:1px solid var(--wine);text-decoration:none}
+.soc a:hover{background:var(--wine);color:var(--cream)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:4/5;object-fit:cover;max-height:560px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--wine);color:var(--mute);padding:28px 0 110px;font-size:14px;border-top:1px solid var(--neon)}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--wine);border:1px solid var(--line)}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:600}
+.mbar a.p{background:var(--rossa)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<div id="gate" role="dialog" aria-label="Intrare în Rossa Room">
+  <canvas id="rose" aria-hidden="true"></canvas>
+  <div class="gtext">
+    <b>Rossa Room</b>
+    <p>OTÍLIA flowers · Peresecina</p>
+    <button class="btn" type="button" data-enter data-ru="Войти">Intră</button>
+    <button class="skipg" type="button" data-skip data-ru="Пропустить">Sari peste</button>
+  </div>
+</div>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav" data-solid="300"><div class="wrap">
+  <a class="wm" href="#top" aria-label="OTÍLIA flowers, Rossa Room"><i aria-hidden="true">RR</i>OTÍLIA flowers</a>
+  <nav class="links" aria-label="Meniu"><a href="#trandafiri" data-ru="Розы">Trandafiri</a><a href="#buchete" data-ru="Букеты">Buchete</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#comanda" data-ru="Заказать">Comandă</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <img src="img/night.webp" alt="Florăria Rossa Room seara, cu firma luminată" width="900" height="1600">
+  <div class="wrap">
+    <h1>Rossa Room <span>OTÍLIA flowers</span></h1>
+    <p data-ru="Свежие розы и букеты в Пересечине. Заказ в WhatsApp, доставка.">Trandafiri proaspeți și buchete în Peresecina. Comandă pe WhatsApp, cu livrare.</p>
+    <div class="acts"><a class="btn" href="#trandafiri" data-ru="Посчитать розы">Numără trandafirii</a><a class="btn ghost" href="#buchete" data-ru="Букеты">Vezi buchetele</a></div>
+  </div>
+</section>
+
+<section class="counter" id="trandafiri">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Сколько">Câți</span> <span class="ac" data-ru="роз?">trandafiri?</span></h2>
+    <p class="lede rv" data-ru="Выберите число и цвет. Цена считается сразу.">Alege numărul și culoarea. Prețul apare pe loc.</p>
+    <div class="cg">
+      <img class="rv" id="cImg" src="img/roses-s.webp" alt="Buchet de trandafiri roșii" loading="lazy">
+      <div class="rv">
+        <div class="big"><span id="cN">25</span><small data-ru="роз в букете">trandafiri în buchet</small></div>
+        <div class="cnt" id="cnt"></div>
+        <div class="cc chips" data-g="col"><button type="button" class="chip" aria-pressed="true" data-ru="Красные">Roșii</button><button type="button" class="chip" aria-pressed="false" data-ru="Коралловые">Corai</button><button type="button" class="chip" aria-pressed="false" data-ru="Белые">Albi</button><button type="button" class="chip" aria-pressed="false" data-ru="Микс">Mix</button></div>
+        <div class="tot"><b id="cP"></b><span data-ru="ориентировочно, с упаковкой">orientativ, cu ambalaj</span></div>
+        <p style="margin-top:22px"><a class="btn" href="#comanda" data-ru="Заказать этот букет">Comandă buchetul</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="buchete">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Букеты,">Buchete,</span> <span class="ac" data-ru="которые покоряют">care cuceresc</span></h2>
+    <div class="bqs">
+      <figure class="rv"><img src="img/red-s.webp" alt="Buchet mare de trandafiri roșii" loading="lazy"><figcaption><b data-ru="Классика">Clasic</b><span><span data-ru="от">de la</span> 650 lei</span></figcaption></figure>
+      <figure class="rv"><img src="img/coral-s.webp" alt="Buchet de trandafiri corai" loading="lazy"><figcaption><b data-ru="Коралл">Coral</b><span><span data-ru="от">de la</span> 700 lei</span></figcaption></figure>
+      <figure class="rv"><img src="img/blue-s.webp" alt="Buchet cu hortensie și crizanteme albe" loading="lazy"><figcaption><b data-ru="Нежность">Gingășie</b><span><span data-ru="от">de la</span> 550 lei</span></figcaption></figure>
+      <figure class="rv"><img src="img/stand-s.webp" alt="Flori în găleți la intrarea în florărie" loading="lazy"><figcaption><b data-ru="Поштучно">La bucată</b><span><span data-ru="от">de la</span> 25 lei</span></figcaption></figure>
+    </div>
+    <p class="pnote" data-ru="Цены ориентировочные, для демо. Флористы подтвердят свой прайс.">Prețuri orientative, pentru prezentare. Floristele își confirmă prețurile.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap room">
+    <img class="rv" src="img/room-s.webp" alt="Interiorul florăriei cu rafturi roz și flori" loading="lazy">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Комната,">O cameră</span> <span class="ac" data-ru="полная роз">plină de trandafiri</span></h2>
+      <p class="lede" data-ru="Заходите, выбирайте сами или позвольте флористу собрать букет при вас.">Intră, alege singur sau lasă floristele să facă buchetul sub ochii tăi.</p>
+      <dl class="hours"><dt data-ru="Пн до Чт">Luni la joi</dt><dd>10:00 la 19:30</dd><dt data-ru="Пт до Вс">Vineri la duminică</dt><dd>09:00 la 21:00</dd></dl>
+      <span class="neon">Rossa Room</span>
+    </div>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Слова,">Vorbe</span> <span class="ac" data-ru="которые греют">care încălzesc</span></h2>
+    <div class="rg">
+      <figure class="rq rv"><p>„Buchetul a fost foarte frumos, iar florile au rezistat două săptămâni, rămânând proaspete și frumoase.”</p><span>Madalina Sirghi</span></figure>
+      <figure class="rq rv"><p>„Atmosfera primitoare. Personalul foarte amabil. Buchetele sunt realizate cu multă atenție la detalii.”</p><span>Victoria Ursu</span></figure>
+      <figure class="rq rv"><p>„Multumesc mult, datoria buchetului mi-am cucerit iubita”</p><span>Mihail Ciuperca</span></figure>
+      <figure class="rq rv"><p>„Frumusețe și rafinament. Flori proaspete pentru orice eveniment!!! Recomand!”</p><span>Nelu Ursachi</span></figure>
+      <figure class="rq rv"><p>„Sunt satisfscuta de deservire, livrarea a fost la cel mai inalt nivel.”</p><span>Snejana 8Cojocariac</span></figure>
+      <figure class="rq rv"><p>„Trandafirii mereu proaspeți, o sa mai intrăm.”</p><span>Marin Ursu</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="comanda">
+  <div class="wrap book">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Заказ,">Comanda,</span> <span class="ac" data-ru="в одно сообщение">într-un mesaj</span></h2>
+      <p class="lede" data-ru="Подтвердим в WhatsApp. Доставка по Пересечине и Орхею.">Confirmăm pe WhatsApp. Livrare în Peresecina și Orhei.</p>
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Ваш букет">Buchetul tău</legend><div class="sum" id="sum" aria-live="polite"></div></fieldset>
+      <fieldset><legend data-ru="Как получить">Cum îl primești</legend><div class="chips" data-g="how"><button type="button" class="chip" aria-pressed="true" data-ru="Доставка">Livrare</button><button type="button" class="chip" aria-pressed="false" data-ru="Заберу сам">Ridic eu</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <label class="f"><span data-ru="Адрес (если доставка)">Adresa (dacă e livrare)</span><input type="text" name="addr" autocomplete="street-address"></label>
+      <div class="two">
+        <label class="f"><span data-ru="Имя">Numele</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Пересечина,">Peresecina,</span> <span class="ac" data-ru="Эминеску 184">Eminescu 184</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>str. M. Eminescu 184, s. Peresecina, r. Orhei</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37360942068">+373 60 942 068</a></dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37360942068" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37360942068"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=rossa%20room%20flowers" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=OTILIA+flowers+ROSSA+ROOM+Peresecina" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+      </div>
+    </div>
+    <img class="rv" src="img/night-s.webp" alt="Firma Rossa Room luminată seara" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 OTÍLIA flowers · Rossa Room</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37360942068" data-ru="Позвонить">Sună</a><a class="p" href="#comanda" data-ru="Заказать">Comandă</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  const NS = [7, 15, 25, 51, 101], per = [35, 35, 32, 30, 28], imgs = { 0: 'roses', 1: 'coral', 2: 'blue', 3: 'red' };
+  let ni = 2;
+  $('#cnt').innerHTML = NS.map((n, i) => `<button type="button" aria-pressed="${i === ni}" data-i="${i}">${n}</button>`).join('');
+  const colRo = () => BF.ro(BF.val('col')), colNow = () => T(colRo(), BF.val('col').dataset.ru || colRo());
+  const total = () => NS[ni] * per[ni] + (NS[ni] > 50 ? 150 : 60);
+  const upd = () => { $('#cN').textContent = NS[ni]; $('#cP').textContent = `≈ ${total().toLocaleString('ro-RO')} lei`; $$('#cnt button').forEach((b, k) => b.setAttribute('aria-pressed', String(k === ni))); const ci = $$('[data-g=col] .chip').indexOf(BF.val('col')); $('#cImg').src = `img/${imgs[ci]}-s.webp`; $('#sum').textContent = `${NS[ni]} ${T('trandafiri', 'роз')} · ${colNow().toLowerCase()} · ≈ ${total().toLocaleString('ro-RO')} lei`; };
+  $('#cnt').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) { ni = +b.dataset.i; upd(); } });
+  $('[data-g=col]').addEventListener('change', upd);
+  BF.onLang(upd);
+  BF.days($('#days'), { n: 8 });
+  BF.form('#bk', { phone: '37360942068', msg: (f) => `Bună ziua! Aș dori un buchet de la Rossa Room.\n${NS[ni]} trandafiri, ${colRo().toLowerCase()} (≈ ${total()} lei)\nCum: ${BF.ro(BF.val('how'))}\nZiua: ${BF.dayText(BF.val('day'))}${f.addr.value.trim() ? '\nAdresa: ' + f.addr.value.trim() : ''}` });
+  BF.init(); upd();
+
+  /* ===== gate: a rose blooms, then the camera falls into it ===== */
+  const cv = $('#rose'), r = BF.gl(cv);
+  if (!r) { BF.gate((done) => { $('#gate').classList.add('out'); setTimeout(done, 700); }); return; }
+  const sc = new THREE.Scene(); sc.fog = new THREE.Fog(0x2b0710, 6, 18);
+  const cam = new THREE.PerspectiveCamera(36, 1, .05, 60);
+  sc.add(new THREE.HemisphereLight(0xffe6e6, 0x2b0710, .7));
+  const key = new THREE.DirectionalLight(0xffffff, 1); key.position.set(3, 6, 4); sc.add(key);
+  const neon = new THREE.PointLight(0xcfa6ff, 1.4, 12); neon.position.set(-3, 1, 2); sc.add(neon);
+  /* one petal: a cupped, curled plane */
+  const petalGeo = (w, h) => { const g = new THREE.PlaneGeometry(w, h, 8, 10); g.translate(0, h / 2, 0); const p = g.attributes.position;
+    for (let i = 0; i < p.count; i++) { const x = p.getX(i), y = p.getY(i), u = x / (w / 2), v = y / h; p.setX(i, x * (.55 + Math.sin(v * Math.PI) * .6)); p.setZ(i, -u * u * .22 * w + v * v * .35 * h); }
+    g.computeVertexNormals(); return g; };
+  const red = new THREE.Color('#d81e44').convertSRGBToLinear();
+  const pm = new THREE.MeshStandardMaterial({ color: red, roughness: .5, side: THREE.DoubleSide });
+  const pm2 = new THREE.MeshStandardMaterial({ color: red.clone().multiplyScalar(.7), roughness: .5, side: THREE.DoubleSide });
+  const rose = new THREE.Group(); sc.add(rose);
+  const petals = []; const ga = Math.PI * (3 - Math.sqrt(5));
+  for (let i = 0; i < 34; i++) { const t = i / 34; const pivot = new THREE.Group(); pivot.rotation.y = i * ga; const h = .55 + t * .75, w = .5 + t * .7; const m = new THREE.Mesh(petalGeo(w, h), t < .3 ? pm2 : pm); m.position.z = .04 + t * .12; pivot.add(m); rose.add(pivot); petals.push({ m, t }); }
+  const sepM = new THREE.MeshStandardMaterial({ color: new THREE.Color('#3f6b3a').convertSRGBToLinear(), roughness: .7, side: THREE.DoubleSide });
+  for (let i = 0; i < 5; i++) { const pv = new THREE.Group(); pv.rotation.y = i / 5 * Math.PI * 2; const s = new THREE.Mesh(petalGeo(.35, 1), sepM); s.rotation.x = 1.9; s.position.y = -.05; pv.add(s); rose.add(pv); }
+  const stem = new THREE.Mesh(new THREE.CylinderGeometry(.05, .06, 6, 8), sepM); stem.position.y = -3; rose.add(stem);
+  const leaf = new THREE.Mesh(petalGeo(.6, 1.1), sepM); leaf.position.set(0, -1.6, 0); leaf.rotation.set(1.2, .6, 0); rose.add(leaf);
+  /* falling petals */
+  const N = 40, fall = []; for (let i = 0; i < N; i++) { const m = new THREE.Mesh(petalGeo(.22, .26), pm); m.position.set((Math.random() - .5) * 9, Math.random() * 8 - 2, (Math.random() - .5) * 5 - 1); m.userData = { s: .2 + Math.random() * .4, r: Math.random() * 6 }; sc.add(m); fall.push(m); }
+  BF.fit(r, cam, cv, (w, h) => { cam.fov = w / h < .8 ? 54 : 36; });
+  let bloom = 0, dive = 0, mx = 0; const t0 = performance.now();
+  addEventListener('pointermove', (e) => { mx = e.clientX / innerWidth - .5; });
+  BF.loop(cv, (t) => {
+    bloom = BF.reduce ? 1 : Math.min(1, (performance.now() - t0) / 2600); const b = 1 - Math.pow(1 - bloom, 3);
+    petals.forEach(({ m, t: k }) => { m.rotation.x = -(.08 + k * k * 1.15) * b - k * .05 - dive * .9 * k; });
+    rose.rotation.y = t * .15; rose.position.y = .2;
+    fall.forEach((m) => { m.position.y -= m.userData.s * .016; m.rotation.x += .01; m.rotation.z += .008; if (m.position.y < -4) m.position.y = 5; });
+    const e = dive * dive;
+    cam.position.set(mx * (1 - e) * 1.2, 2.4 + e * 1.2, 7 - e * 6.4); cam.lookAt(0, -.5 + e * 1.3, 0);
+    r.render(sc, cam);
+  });
+  BF.gate((done) => { const s0 = performance.now(); const step = () => { const k = (performance.now() - s0) / 2000; dive = Math.min(1, k); if (k < 1) requestAnimationFrame(step); else { $('#gate').classList.add('out'); setTimeout(done, 750); } }; step(); });
+})();
+</script>
+</body>
+</html>

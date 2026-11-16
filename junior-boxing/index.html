@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ro" data-key="jbox">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Junior Boxing Club Moldova</title>
+<meta name="description" content="Junior Boxing Club Moldova, str. Braniștii 5/4, Chișinău. Box pentru copii, adolescenți și adulți. 5,0 din 23 de note. Antrenament de probă pe WhatsApp.">
+<meta property="og:title" content="Junior Boxing Club Moldova">
+<meta property="og:description" content="Box pentru copii și adulți. 5,0 din 23 de note.">
+<meta property="og:image" content="img/ring.webp">
+<meta name="theme-color" content="#ffd23f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffd23f'/%3E%3Cpath d='M18 40V24a10 10 0 0 1 20 0v4h4a6 6 0 0 1 0 12z' fill='%23e8322b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<style>
+/* Hallmark · v2.0.0 · theme: custom · idea: "their window is painted with a yellow BOX CLUB and two big gloves, so the site is that window come alive: a 3D ring you can spin and a real round timer kids and parents can use at home" · vibe: "poster yellow, glove red, ring blue, chunky type, cut-paper shadows" · posture: committed · axes: bright/poster-display/yellow-red-blue · nav: glove mark, three links, trial · footer: blue band · hero: poster headline on yellow with the 3D ring · signature: 3D ring with a working round timer and bell */
+/* Hallmark · waive 24b · spacing hand-set around the ring and the timer · rhythm follows the ringul and the runda */
+/* critique: a junior club sells safety, discipline and fun to parents; the site shows the space, explains groups and gear, and adds a playful tool instead of photos of children */
+:root{
+  --yel:#ffd23f; --yel-2:#ffe27f; --paper:#fff9e6; --card:#fffdf5; --ink:#141414; --ink-2:#3b3b3b; --mute:#5f5a4c; --line:#ead9a0;
+  --red:#e8322b; --red-deep:#b8231e; --blue:#1d4ed8; --blue-deep:#173aa3; --sky:#d6e2ff;
+  --font-display:'Bowlby One',sans-serif; --font-body:'Nunito Sans',sans-serif;
+  --max:1240px; --gut:clamp(18px,4vw,44px); --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--font-body)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;margin:0;line-height:.95;text-wrap:balance}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:200}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:14px;border:3px solid var(--ink);background:var(--red);color:var(--card);font:800 17px/1 var(--font-body);text-decoration:none;cursor:pointer;white-space:nowrap;box-shadow:4px 4px 0 var(--ink);transition:transform .15s var(--ease),box-shadow .15s var(--ease)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active,.chip:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+button:disabled{background:var(--line);color:var(--mute);cursor:not-allowed}
+.btn.ghost{background:var(--card);color:var(--ink)}
+.btn.blue{background:var(--blue)}
+
+.nav{position:sticky;top:0;z-index:40;background:var(--yel);border-bottom:3px solid var(--ink)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:72px}
+.wm{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 20px/1 var(--font-display)}
+.wm svg{width:32px;height:32px}
+.links{display:flex;gap:22px;margin-left:auto}
+.links a{text-decoration:none;font-weight:800;padding:8px 0}
+.links a:hover{color:var(--red)}
+.lang{display:flex;gap:4px}
+.lang button{min-width:44px;min-height:40px;border-radius:10px;border:2px solid var(--ink);background:var(--card);color:var(--ink);font:800 12px/1 var(--font-body);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--yel)}
+@media (max-width:900px){.links,.nav .btn{display:none}.lang{margin-left:auto}}
+
+.hero{background:var(--yel);border-bottom:3px solid var(--ink)}
+.hg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(40px,6vw,80px) 0}
+.hero h1{font-size:clamp(52px,6.8vw,108px)}
+.hero h1 span{display:block}
+.hero h1 span+span{color:var(--red);-webkit-text-stroke:0}
+.hero p{font-size:20px;max-width:26em;margin:20px 0 26px;font-weight:600}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px}
+.ringbox{position:relative;aspect-ratio:1/1;border:3px solid var(--ink);border-radius:24px;background:var(--sky);box-shadow:8px 8px 0 var(--ink);overflow:hidden}
+#ring{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:grab}
+.ringbox .fb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.no-gl .ringbox .fb{display:block}
+@media (max-width:900px){.hg{grid-template-columns:minmax(0,1fr)}}
+
+section{padding:clamp(80px,10vw,130px) 0}
+.h2{font-size:clamp(44px,6.4vw,96px)}
+.h2 .ac{color:var(--red)}
+.lede{color:var(--ink-2);max-width:32em;margin:16px 0 0;font-weight:600}
+
+/* timer */
+.timer{background:var(--blue);color:var(--card);border-bottom:3px solid var(--ink)}
+.timer .h2 .ac{color:var(--yel)}
+.timer .lede{color:var(--sky)}
+.tw{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);margin-top:40px;align-items:center}
+.clock{background:var(--ink);border:3px solid var(--card);border-radius:24px;padding:28px;text-align:center}
+.clock .ph{font:800 18px/1 var(--font-body);color:var(--yel)}
+.clock .tm{font:400 clamp(80px,14vw,170px)/1 var(--font-display);margin:12px 0;font-variant-numeric:tabular-nums}
+.clock .rd{color:var(--sky);font-weight:700}
+.clock.rest .ph{color:var(--sky)}
+.clock.rest .tm{color:var(--sky)}
+.ctl{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
+.presets{display:grid;gap:10px}
+.presets button{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:64px;padding:0 20px;border-radius:14px;border:3px solid var(--card);background:transparent;color:var(--card);font:800 17px/1 var(--font-body);cursor:pointer;text-align:left}
+.presets button[aria-pressed="true"]{background:var(--yel);color:var(--ink);border-color:var(--ink)}
+.presets small{font-weight:600;font-size:14px}
+@media (max-width:900px){.tw{grid-template-columns:minmax(0,1fr)}}
+
+/* groups */
+.gg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:40px}
+.gc{background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:26px;display:grid;gap:10px;box-shadow:6px 6px 0 var(--ink);align-content:start}
+.gc .age{font:400 46px/1 var(--font-display);color:var(--blue)}
+.gc h3{font-size:28px}
+.gc p{margin:0;color:var(--ink-2)}
+.gc:nth-child(2) .age{color:var(--red)}
+@media (max-width:900px){.gg{grid-template-columns:minmax(0,1fr)}}
+
+.gear{background:var(--yel-2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.gl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:36px}
+.gi{background:var(--card);border:3px solid var(--ink);border-radius:18px;padding:18px;display:grid;gap:6px}
+.gi svg{width:40px;height:40px}
+.gi b{font-size:18px}
+.gi span{color:var(--ink-2);font-size:15px}
+@media (max-width:900px){.gl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.space .sg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:40px}
+.space img{width:100%;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--ink);border-radius:18px}
+.space img:first-child{grid-row:span 2;height:100%}
+@media (max-width:900px){.space .sg{grid-template-columns:repeat(2,minmax(0,1fr))}.space img:first-child{grid-row:auto;height:auto}}
+
+.revs{background:var(--card)}
+.rg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:40px}
+.rq{margin:0;border:3px solid var(--ink);border-radius:22px;padding:26px;background:var(--paper)}
+.rq p{margin:0;font-size:21px;font-weight:600}
+.rq span{display:block;margin-top:12px;color:var(--mute);font-size:15px}
+@media (max-width:900px){.rg{grid-template-columns:minmax(0,1fr)}}
+
+.book{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+form{background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:clamp(22px,3.4vw,38px);display:grid;gap:20px;box-shadow:8px 8px 0 var(--ink)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:800;font-size:15px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 16px;border-radius:12px;border:2px solid var(--ink);background:var(--card);color:var(--ink);font:700 15px/1 var(--font-body);cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.chip small{font-size:11px;color:var(--mute)}
+.chip[aria-pressed="true"]{background:var(--yel)}
+.chip.day{min-width:64px;min-height:56px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label.f{display:grid;gap:6px;font-size:14px;font-weight:800}
+input[type=text],input[type=tel]{width:100%;min-height:50px;border:2px solid var(--ink);border-radius:12px;background:var(--paper);color:var(--ink);font:400 17px/1.4 var(--font-body);padding:12px 14px}
+input[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red-deep);font-weight:800;font-size:14px;min-height:1.2em;margin:0}
+.fine{font-size:13px;color:var(--mute);margin:0}
+@media (max-width:860px){.book{grid-template-columns:minmax(0,1fr)}.two{grid-template-columns:minmax(0,1fr)}}
+
+.contact{background:var(--blue);color:var(--card);border-top:3px solid var(--ink)}
+.contact .h2 .ac{color:var(--yel)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:48px;align-items:center}
+.ct dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 22px;margin:28px 0}
+.ct dt{font-weight:800;font-size:14px;color:var(--yel)}
+.ct dd{margin:0}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border:2px solid var(--card);border-radius:12px;text-decoration:none;font-weight:800}
+.soc a:hover{background:var(--yel);color:var(--ink);border-color:var(--ink)}
+.soc svg{width:19px;height:19px}
+.ct img{width:100%;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--ink);border-radius:20px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+footer{background:var(--ink);color:var(--yel-2);padding:28px 0 110px;font-size:14px}
+.fo{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.fo .sp{margin-left:auto}
+@media (min-width:901px){footer{padding-bottom:30px}}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;display:none;gap:8px;padding:8px;background:var(--ink);border-radius:16px}
+.mbar a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:12px;color:var(--yel);text-decoration:none;font-weight:800}
+.mbar a.p{background:var(--red);color:var(--card)}
+@media (max-width:900px){.mbar{display:flex}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#main" data-ru="К содержанию">Sari la conținut</a>
+<header class="nav" id="nav"><div class="wrap">
+  <a class="wm" href="#top" aria-label="Junior Boxing Club Moldova"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 22V12a7 7 0 0 1 14 0v2h2a4 4 0 0 1 0 8z" fill="#e8322b" stroke="#141414" stroke-width="2"/><rect x="6" y="22" width="12" height="5" rx="1" fill="#fffdf5" stroke="#141414" stroke-width="2"/></svg>Junior Box</a>
+  <nav class="links" aria-label="Meniu"><a href="#runda" data-ru="Таймер">Cronometru</a><a href="#grupe" data-ru="Группы">Grupe</a><a href="#contact" data-ru="Контакты">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Limba"><button type="button" data-lang="ro" aria-pressed="true">RO</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+  <a class="btn" href="#proba" data-ru="Пробная тренировка">Antrenament de probă</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap hg">
+    <div>
+      <h1><span data-ru="Бокс">Box</span> <span data-ru="с характером">cu caracter</span></h1>
+      <p data-ru="Дисциплина, сила и уверенность для детей, подростков и взрослых. Ул. Брэништий 5/4.">Disciplină, forță și încredere pentru copii, adolescenți și adulți. Str. Braniștii 5/4.</p>
+      <div class="acts"><a class="btn" href="#proba" data-ru="Пробная тренировка">Antrenament de probă</a><a class="btn ghost" href="#runda" data-ru="Запустить раунд">Pornește o rundă</a></div>
+    </div>
+    <div class="ringbox rv"><img class="fb" src="img/ring-s.webp" alt="Ringul de box al clubului"><canvas id="ring" role="img" aria-label="Ring de box 3D pe care îl poți roti"></canvas></div>
+  </div>
+</section>
+
+<section class="timer" id="runda">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Раунд,">Runda,</span> <span class="ac" data-ru="как в зале">ca în sală</span></h2>
+    <p class="lede rv" data-ru="Настоящий таймер раундов с гонгом. Для тренировки дома между занятиями.">Un cronometru adevărat de runde, cu gong. Pentru antrenament acasă, între lecții.</p>
+    <div class="tw">
+      <div class="clock rv" id="clock" aria-live="polite"><div class="ph" id="ph"></div><div class="tm" id="tm">3:00</div><div class="rd" id="rd"></div>
+        <div class="ctl"><button class="btn" type="button" id="go" data-ru="Старт">Start</button><button class="btn ghost" type="button" id="reset" data-ru="Сброс">Resetează</button></div></div>
+      <div class="presets rv" id="pre">
+        <button type="button" aria-pressed="false" data-r="60" data-p="30" data-n="3"><span data-ru="Новичок">Începător</span><small>3 × 1:00 / 0:30</small></button>
+        <button type="button" aria-pressed="true" data-r="120" data-p="60" data-n="3"><span data-ru="Юниор">Junior</span><small>3 × 2:00 / 1:00</small></button>
+        <button type="button" aria-pressed="false" data-r="180" data-p="60" data-n="3"><span data-ru="Взрослый">Adult</span><small>3 × 3:00 / 1:00</small></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="grupe">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Группы">Grupe</span> <span class="ac" data-ru="по возрасту">pe vârstă</span></h2>
+    <div class="gg">
+      <article class="gc rv"><span class="age">7+</span><h3 data-ru="Дети">Copii</h3><p data-ru="Координация, игра, правила и уважение. Без жёстких спаррингов.">Coordonare, joc, reguli și respect. Fără sparring dur.</p></article>
+      <article class="gc rv"><span class="age">12+</span><h3 data-ru="Подростки">Adolescenți</h3><p data-ru="Техника, выносливость, первые соревнования.">Tehnică, rezistență, primele competiții.</p></article>
+      <article class="gc rv"><span class="age">18+</span><h3 data-ru="Взрослые">Adulți</h3><p data-ru="Форма, стресс-контроль, бокс с нуля.">Formă fizică, mai puțin stres, box de la zero.</p></article>
+    </div>
+    <p class="lede" data-ru="Возраст групп ориентировочный, тренер подтвердит.">Vârstele grupelor sunt orientative, antrenorul le confirmă.</p>
+  </div>
+</section>
+
+<section class="gear">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Что взять">Ce iei</span> <span class="ac" data-ru="на первое занятие">la prima lecție</span></h2>
+    <div class="gl">
+      <div class="gi rv"><svg viewBox="0 0 40 40" fill="none" stroke="#141414" stroke-width="2.4" aria-hidden="true"><path d="M10 30V16a10 10 0 0 1 20 0v14z"/><path d="M14 30h12"/></svg><b data-ru="Форма">Echipament</b><span data-ru="Футболка, шорты, кроссовки">Tricou, pantaloni scurți, adidași</span></div>
+      <div class="gi rv"><svg viewBox="0 0 40 40" fill="none" stroke="#141414" stroke-width="2.4" aria-hidden="true"><path d="M16 6h8v6l4 4v18H12V16l4-4z"/></svg><b data-ru="Вода">Apă</b><span data-ru="Бутылка воды">O sticlă de apă</span></div>
+      <div class="gi rv"><svg viewBox="0 0 40 40" fill="none" stroke="#141414" stroke-width="2.4" aria-hidden="true"><path d="M8 26V16a8 8 0 0 1 16 0v2h4a4 4 0 0 1 0 8z"/></svg><b data-ru="Перчатки">Mănuși</b><span data-ru="На пробу дадим наши">La probă îți dăm de-ale noastre</span></div>
+      <div class="gi rv"><svg viewBox="0 0 40 40" fill="none" stroke="#141414" stroke-width="2.4" aria-hidden="true"><path d="M6 20h28M10 14l-4 6 4 6M30 14l4 6-4 6"/></svg><b data-ru="Бинты">Bandaje</b><span data-ru="Покажем, как наматывать">Îți arătăm cum se pun</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="space">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="Зал,">Sala,</span> <span class="ac" data-ru="где учатся">unde se învață</span></h2>
+    <div class="sg">
+      <img class="rv" src="img/ring-s.webp" alt="Ringul cu corzi roșii și albastre" loading="lazy">
+      <img class="rv" src="img/gym-s.webp" alt="Sala cu saci de box și podea roz" loading="lazy">
+      <img class="rv" src="img/blue-s.webp" alt="Sac de box albastru" loading="lazy">
+      <img class="rv" src="img/window-s.webp" alt="Fereastra pictată Box Club" loading="lazy">
+      <img class="rv" src="img/red-s.webp" alt="Saci de box roșii" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <h2 class="h2 rv"><span data-ru="5,0 из 5">5,0 din 5</span> <span class="ac" data-ru="на Google">pe Google</span></h2>
+    <div class="rg">
+      <figure class="rq rv"><p>„Cel mai bun club de box din Chișinău și în general din Moldova, mai ales antrenorul, foarte pregătit și disciplinat…”</p><span>Jan Cotoman</span></figure>
+      <figure class="rq rv"><p>„Отличные тренера.”</p><span>Serghei Teliucov</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="proba">
+  <div class="wrap book">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Пробная">Prima</span> <span class="ac" data-ru="тренировка">lecție</span></h2>
+      <p class="lede" data-ru="Выберите группу и день. Тренер ответит в WhatsApp.">Alegi grupa și ziua. Antrenorul îți răspunde pe WhatsApp.</p>
+    </div>
+    <form id="bk" novalidate>
+      <fieldset><legend data-ru="Группа">Grupa</legend><div class="chips" data-g="grp"><button type="button" class="chip" aria-pressed="true" data-ru="Дети">Copii</button><button type="button" class="chip" aria-pressed="false" data-ru="Подростки">Adolescenți</button><button type="button" class="chip" aria-pressed="false" data-ru="Взрослые">Adulți</button></div></fieldset>
+      <fieldset><legend data-ru="День">Ziua</legend><div class="chips" data-g="day" id="days"></div></fieldset>
+      <div class="two">
+        <label class="f"><span data-ru="Имя (родителя или ваше)">Numele (al părintelui sau al tău)</span><input type="text" name="name" autocomplete="name"></label>
+        <label class="f"><span data-ru="Телефон">Telefon</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+373"></label>
+      </div>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-ru="Отправить в WhatsApp">Trimite pe WhatsApp</button>
+      <p class="fine"><span data-ru="Отправляя, вы соглашаетесь с">Trimițând, ești de acord cu</span> <a href="termeni.html" data-ru="условиями">termenii</a> <span data-ru="и">și</span> <a href="confidentialitate.html" data-ru="конфиденциальностью">confidențialitatea</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap ct">
+    <div class="rv">
+      <h2 class="h2"><span data-ru="Брэништий 5/4,">Braniștii 5/4,</span> <span class="ac" data-ru="Кишинёв">Chișinău</span></h2>
+      <dl>
+        <dt data-ru="Адрес">Adresa</dt><dd>str. Braniștii 5/4, Chișinău</dd>
+        <dt data-ru="Телефон">Telefon</dt><dd><a href="tel:+37369755831">+373 69 755 831</a></dd>
+        <dt data-ru="Часы">Program</dt><dd data-ru="Уточняйте у тренера">Se confirmă cu antrenorul</dd>
+      </dl>
+      <div class="soc">
+        <a href="https://wa.me/37369755831" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+        <a href="viber://chat?number=%2B37369755831"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Viber</a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=junior%20boxing%20club%20moldova" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Junior+boxing+club+Moldova+Branistii" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Google Maps</a>
+      </div>
+    </div>
+    <img class="rv" src="img/window-s.webp" alt="Fereastra pictată a clubului, cu mănuși de box și BOX CLUB" loading="lazy">
+  </div>
+</section>
+</main>
+<footer><div class="wrap fo">
+  <span>© 2026 Junior Boxing Club Moldova</span>
+  <a href="termeni.html" data-ru="Условия">Termeni și condiții</a>
+  <a href="confidentialitate.html" data-ru="Конфиденциальность">Confidențialitate</a>
+  <span class="sp" data-ru="Демо-сайт от Brightfold">Site de prezentare realizat de Brightfold</span>
+</div></footer>
+<nav class="mbar" aria-label="Acțiuni rapide"><a href="tel:+37369755831" data-ru="Позвонить">Sună</a><a class="p" href="#proba" data-ru="Проба">Probă</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="bf-core.js"></script>
+<script>
+(() => {
+  const { $, $$, T } = BF;
+  /* round timer with a bell */
+  let cfg = { r: 120, p: 60, n: 3 }, left = 120, round = 1, rest = false, run = false, last = 0, actx = null, pulse = 0;
+  const fmt = (s) => { const c = Math.ceil(s); return `${Math.floor(c / 60)}:${String(c % 60).padStart(2, '0')}`; };
+  const bell = (n = 1) => { try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); for (let i = 0; i < n; i++) { const o = actx.createOscillator(), g = actx.createGain(), t0 = actx.currentTime + i * .35; o.type = 'triangle'; o.frequency.setValueAtTime(880, t0); o.frequency.exponentialRampToValueAtTime(660, t0 + .8); g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(.35, t0 + .02); g.gain.exponentialRampToValueAtTime(.0001, t0 + 1.1); o.connect(g).connect(actx.destination); o.start(t0); o.stop(t0 + 1.2); } } catch (e) {} pulse = 1; };
+  const paint = () => { $('#tm').textContent = fmt(Math.max(0, left)); $('#ph').textContent = rest ? T('Pauză', 'Отдых') : T('Luptă', 'Бой'); $('#rd').textContent = T(`Runda ${round} din ${cfg.n}`, `Раунд ${round} из ${cfg.n}`); $('#clock').classList.toggle('rest', rest); $('#go').textContent = run ? T('Pauză', 'Пауза') : T('Start', 'Старт'); };
+  const reset = () => { run = false; rest = false; round = 1; left = cfg.r; paint(); };
+  const tick = (now) => { if (!run) return; const dt = (now - last) / 1000; last = now; left -= dt;
+    if (left <= 0) { if (!rest && round < cfg.n) { rest = true; left = cfg.p; bell(1); } else if (rest) { rest = false; round++; left = cfg.r; bell(1); } else { run = false; left = 0; bell(3); paint(); return; } }
+    paint(); requestAnimationFrame(tick); };
+  $('#go').addEventListener('click', () => { run = !run; if (run) { if (left === cfg.r && round === 1 && !rest) bell(1); last = performance.now(); requestAnimationFrame(tick); } paint(); });
+  $('#reset').addEventListener('click', reset);
+  $('#pre').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; $$('#pre button').forEach((x) => x.setAttribute('aria-pressed', String(x === b))); cfg = { r: +b.dataset.r, p: +b.dataset.p, n: +b.dataset.n }; reset(); });
+  BF.onLang(paint);
+  BF.days($('#days'), { n: 8, closed: [0] });
+  BF.form('#bk', { phone: '37369755831', msg: () => `Bună ziua! Aș dori un antrenament de probă la Junior Boxing Club.\nGrupa: ${BF.ro(BF.val('grp'))}\nZiua: ${BF.dayText(BF.val('day'))}` });
+  BF.init(); reset();
+
+  /* ===== 3D ring ===== */
+  const cv = $('#ring'), r = BF.gl(cv); if (!r) return;
+  r.shadowMap.enabled = true;
+  const sc = new THREE.Scene(), cam = new THREE.PerspectiveCamera(34, 1, .1, 80);
+  const M = (c, o = {}) => { const m = new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: .6 }, o)); m.color.convertSRGBToLinear(); return m; };
+  sc.add(new THREE.HemisphereLight(0xffffff, 0x8899cc, .7));
+  const spot = new THREE.SpotLight(0xffffff, 1.4, 40, .55, .5); spot.position.set(0, 12, 2); spot.castShadow = true; spot.shadow.mapSize.set(1024, 1024); sc.add(spot);
+  const world = new THREE.Group(); sc.add(world);
+  const S = 3.6;
+  const apron = new THREE.Mesh(new THREE.BoxGeometry(S * 2 + .8, 1, S * 2 + .8), M('#1d4ed8')); apron.position.y = -.5; apron.receiveShadow = true; world.add(apron);
+  const ac = document.createElement('canvas'); ac.width = ac.height = 512; const g = ac.getContext('2d'); g.fillStyle = '#d6e2ff'; g.fillRect(0, 0, 512, 512); g.strokeStyle = '#1d4ed8'; g.lineWidth = 6; g.strokeRect(20, 20, 472, 472); g.fillStyle = '#ffd23f'; g.beginPath(); g.arc(256, 256, 120, 0, Math.PI * 2); g.fill(); g.fillStyle = '#141414'; g.font = '64px "Bowlby One", sans-serif'; g.textAlign = 'center'; g.fillText('BOX', 256, 248); g.font = '44px "Bowlby One", sans-serif'; g.fillText('CLUB', 256, 300);
+  const ct = new THREE.CanvasTexture(ac); ct.encoding = THREE.sRGBEncoding;
+  const canvasTop = new THREE.Mesh(new THREE.PlaneGeometry(S * 2, S * 2), new THREE.MeshStandardMaterial({ map: ct, roughness: .9 })); canvasTop.rotation.x = -Math.PI / 2; canvasTop.position.y = .01; canvasTop.receiveShadow = true; world.add(canvasTop);
+  const corners = [[S, S, '#e8322b'], [-S, -S, '#1d4ed8'], [S, -S, '#fffdf5'], [-S, S, '#fffdf5']];
+  corners.forEach(([x, z, c]) => { const p = new THREE.Mesh(new THREE.CylinderGeometry(.14, .14, 2.6, 16), M('#c9ccd3', { metalness: .8, roughness: .3 })); p.position.set(x, 1.3, z); p.castShadow = true; world.add(p); const pad = new THREE.Mesh(new THREE.BoxGeometry(.36, 1.8, .36), M(c)); pad.position.set(x, 1.3, z); world.add(pad); });
+  const ropeCol = ['#e8322b', '#fffdf5', '#1d4ed8'];
+  const ropes = [];
+  [.7, 1.4, 2.1].forEach((y, i) => { const m = M(ropeCol[i], { roughness: .4 }); [[S, S, -S, S], [-S, S, -S, -S], [-S, -S, S, -S], [S, -S, S, S]].forEach(([x1, z1, x2, z2]) => { const len = Math.hypot(x2 - x1, z2 - z1); const rp = new THREE.Mesh(new THREE.CylinderGeometry(.06, .06, len, 10), m); rp.position.set((x1 + x2) / 2, y, (z1 + z2) / 2); rp.rotation.z = Math.PI / 2; rp.rotation.y = Math.atan2(z1 - z2, x2 - x1); rp.castShadow = true; world.add(rp); ropes.push(rp); }); });
+  /* two gloves resting on the canvas */
+  const glove = (c, x, z, ry) => { const gg = new THREE.Group(), m = M(c, { roughness: .35 }); const f = new THREE.Mesh(new THREE.SphereGeometry(.55, 24, 16), m); f.scale.set(1, .9, 1.2); gg.add(f); const th = new THREE.Mesh(new THREE.SphereGeometry(.22, 12, 8), m); th.position.set(-.42, -.1, .25); gg.add(th); const cuff = new THREE.Mesh(new THREE.CylinderGeometry(.4, .44, .7, 20), M('#fffdf5')); cuff.rotation.x = Math.PI / 2; cuff.position.z = -.85; gg.add(cuff); gg.position.set(x, .5, z); gg.rotation.y = ry; gg.traverse((o) => { if (o.isMesh) o.castShadow = true; }); world.add(gg); return gg; };
+  const g1 = glove('#e8322b', -.9, .8, .6), g2 = glove('#e8322b', .9, .5, -.9);
+  let rot = .6, drag = false, lx = 0, vel = .003;
+  cv.addEventListener('pointerdown', (e) => { drag = true; lx = e.clientX; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove', (e) => { if (!drag) return; vel = (e.clientX - lx) * .006; rot += vel; lx = e.clientX; });
+  const up = () => { drag = false; }; cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+  BF.fit(r, cam, cv, (w, h) => { const d = w / h < 1 ? 22 : 19; cam.position.set(0, d * .6, d * .8); cam.lookAt(0, .3, 0); });
+  BF.loop(cv, (t) => {
+    if (!drag) { rot += BF.reduce ? 0 : vel; vel += (.003 - vel) * .02; }
+    world.rotation.y = rot; pulse *= .94;
+    spot.intensity = 1.4 + pulse * 2 + (run ? Math.sin(t * 6) * .15 : 0);
+    ropes.forEach((rp, i) => { rp.position.y += 0; rp.scale.x = 1 + pulse * .25 * Math.sin(t * 30 + i); });
+    g1.position.y = .5 + (run && !rest ? Math.abs(Math.sin(t * 5)) * .3 : 0); g2.position.y = .5 + (run && !rest ? Math.abs(Math.sin(t * 5 + 1.5)) * .3 : 0);
+    r.render(sc, cam);
+  });
+})();
+</script>
+</body>
+</html>
