@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ro" data-key="acoperisuri-tm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reparații Acoperișuri Timișoara · șarpante, tablă, jgheaburi</title>
+<meta name="description" content="Acoperișuri noi, renovări, șarpante din lemn, învelitori din tablă, jgheaburi și reparații în Timișoara. 4,9 din 5 pe Google, din 64 de recenzii. Cere o ofertă pe WhatsApp.">
+<meta name="theme-color" content="#1b2129">
+<meta property="og:title" content="Reparații Acoperișuri Timișoara">
+<meta property="og:description" content="De la lemn la coamă: șarpante, tablă, jgheaburi și reparații în Timișoara.">
+<meta property="og:image" content="img/ridge.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2129'/%3E%3Cpath d='M8 38 32 16l24 22' fill='none' stroke='%23e2775c' stroke-width='6' stroke-linejoin='round'/%3E%3Cpath d='M16 46h32' stroke='%23efe8dc' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400&f[]=switzer@300,400,500&display=swap">
+<style>
+/* Hallmark · shape: a roof drawn in section, one layer per screen of the pinned chapter · genre: editorial · theme: custom · job: hire · idea: "the page builds the roof the way this crew does, timber first, then membrane, battens, metal and the gutter, each layer shown on their own photograph" · vibe: "slate dusk, clay red, timber, quiet craft"
+ * paper: oklch(21.5% 0.022 250) · accent: oklch(69% 0.14 33) · display: Melodrama 300 · body: Switzer · hero: their own roof seen from the ridge, full bleed, the head set low on it · nav: a floating pill, menu, wordmark, the quote action · footer: the address, the hours and the phone set as the close · imagery: photographs (the firm's own, from its Google profile) · signature: the roof cross-section drawing itself layer by layer while their photo of that stage changes beside it
+ * axes: dark/high-contrast-serif/chromatic-red · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H5 E4 S5 R4 V5 · weakest: E, few photographs and several small ones; the small ones sit only in the chapter frames at their own size, the two large ones carry the hero and the close */
+/* Hallmark · waive 80 · .fig-wrap is the roof in section, the five layers this crew builds · a labelled diagram, each layer named in the legend and in the text beside its photograph */
+/* Hallmark · waive 83 · the chapter shows five photographs in one frame, one at a time · each is the photograph of that layer, the chapter is the firm's portfolio */
+
+/* ---------- tokens ---------- */
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1.0625rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display: clamp(3.25rem, 7.4vw + 0.5rem, 8.75rem); --text-section: clamp(2.5rem, 4.6vw + 0.75rem, 5.5rem); --text-title: clamp(1.75rem, 1.8vw + 1rem, 2.75rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem); --text-figure: clamp(4rem, 9vw + 1rem, 10rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 600ms; --dur-draw: 1100ms;
+  --container: 1360px; --gutter: 56px; --gap-columns: 32px; --section-gap: 160px;
+  --z-raised: 10; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400;
+  --color-paper: oklch(21.5% 0.022 250); --color-paper-2: oklch(25.5% 0.025 250); --color-paper-3: oklch(30.5% 0.028 250);
+  --color-ink: oklch(94.5% 0.018 80); --color-ink-2: oklch(84% 0.02 80); --color-muted: oklch(74% 0.022 250);
+  --color-rule: oklch(38% 0.026 250); --color-rule-2: oklch(52% 0.026 250);
+  --color-accent: oklch(69% 0.14 33); --color-accent-2: oklch(76% 0.12 38); --color-accent-ink: oklch(19% 0.03 30); --color-focus: oklch(80% 0.13 40);
+  --color-scrim: oklch(14% 0.02 250 / 0.82); --color-scrim-soft: oklch(14% 0.02 250 / 0); --color-wash: oklch(14% 0.02 250 / 0.55);
+  --color-timber: oklch(72% 0.12 62); --color-membrane: oklch(62% 0.04 230); --color-metal: oklch(52% 0.12 28);
+  --color-error: oklch(72% 0.16 27); --color-success: oklch(78% 0.12 150);
+  --font-display: "Melodrama", ui-serif, Georgia, serif; --font-body: "Switzer", ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 6px; --radius-pill: 999px; --rule-hair: 1px; --tracking-display: -0.01em;
+  --nav-h: 64px;
+  --chat-bg: var(--color-accent); --chat-ink: var(--color-accent-ink); --chat-paper: var(--color-paper-2); --chat-text: var(--color-ink); --chat-bubble: var(--color-paper-3); --chat-line: var(--color-rule); --chat-field: var(--color-muted); --chat-shadow: oklch(8% 0.02 250 / 0.6); --chat-focus: var(--color-focus); --chat-display: var(--font-display); --chat-bottom: 20px; --chat-bottom-m: 88px;
+}
+@media (max-width: 60rem) { :root { --gutter: 24px; --section-gap: 112px; } }
+@media (max-width: 40rem) { :root { --gutter: 18px; --section-gap: 88px; --gap-columns: 16px; } }
+
+/* ---------- base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scrollbar-color: var(--color-rule-2) var(--color-paper); scroll-padding-top: var(--space-3xl); }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.6; -webkit-font-smoothing: antialiased; caret-color: var(--color-accent); }
+::selection { background: color-mix(in oklab, var(--color-accent) 30%, transparent); color: var(--color-ink); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: 300; font-synthesis: none; letter-spacing: var(--tracking-display); overflow-wrap: break-word; min-width: 0; text-wrap: balance; line-height: 0.95; }
+p { margin: 0; text-wrap: pretty; }
+p:not([class]) { max-width: 62ch; }
+img { max-width: 100%; height: auto; display: block; }
+svg { display: block; }
+[hidden] { display: none !important; }
+button, input, select, textarea { font: inherit; }
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.num { font-variant-numeric: tabular-nums lining-nums; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: absolute; left: var(--space-md); top: -100px; z-index: var(--z-modal); background: var(--color-ink); color: var(--color-paper); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-card); }
+.skip:focus { top: var(--space-md); }
+
+/* ---------- controls ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs); min-height: 50px; padding: 0 var(--space-lg); border: 1px solid var(--color-accent); border-radius: var(--radius-pill); background: var(--color-accent); color: var(--color-accent-ink); font: 500 var(--text-md)/1 var(--font-body); white-space: nowrap; text-decoration: none; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
+.btn:hover { background: var(--color-accent-2); border-color: var(--color-accent-2); }
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn--quiet { background: transparent; color: var(--color-ink); border-color: var(--color-rule-2); }
+.btn--quiet:hover { background: var(--color-paper-3); border-color: var(--color-ink-2); }
+.link { color: var(--color-ink); text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+.link:hover { color: var(--color-accent-2); }
+
+/* ---------- nav: a floating pill ---------- */
+.nav { position: fixed; z-index: var(--z-sticky-nav); top: var(--space-md); left: 50%; transform: translateX(-50%); width: min(560px, calc(100% - 2 * var(--space-md))); height: var(--nav-h); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--space-sm); padding: 0 var(--space-xs); border-radius: var(--radius-pill); background: color-mix(in oklab, var(--color-paper) 78%, transparent); border: 1px solid color-mix(in oklab, var(--color-ink) 12%, transparent); backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2); }
+.nav__menu { justify-self: start; display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 48px; padding: 0 var(--space-md); border: 0; border-radius: var(--radius-pill); background: transparent; color: var(--color-ink); cursor: pointer; font: 500 var(--text-sm)/1 var(--font-body); transition: background-color var(--dur-short) var(--ease-out); }
+.nav__menu:hover { background: var(--color-paper-3); }
+.nav__menu span { display: grid; gap: var(--space-2xs); width: 18px; }
+.nav__menu span i { display: block; height: 1.5px; background: currentColor; transition: transform var(--dur-short) var(--ease-out); }
+.menu-open .nav__menu span i:first-child { transform: translateY(2.75px) rotate(45deg); }
+.menu-open .nav__menu span i:last-child { transform: translateY(-2.75px) rotate(-45deg); }
+.wordmark { display: inline-flex; align-items: center; gap: var(--space-xs); text-decoration: none; color: var(--color-ink); font: 400 1.35rem/1 var(--font-display); white-space: nowrap; }
+.wordmark svg { width: 26px; height: 18px; color: var(--color-accent); }
+.nav .btn { justify-self: end; min-height: 48px; padding: 0 var(--space-md); font-size: var(--text-sm); }
+@media (max-width: 40rem) { .wordmark b { display: none; } .nav__menu em { display: none; } }
+
+/* the menu sheet */
+.sheet { position: fixed; inset: 0; z-index: var(--z-modal); background: var(--color-paper); display: grid; grid-template-rows: auto 1fr auto; padding: calc(var(--nav-h) + var(--space-2xl)) var(--gutter) var(--space-xl); opacity: 0; visibility: hidden; transition: opacity var(--dur-long) var(--ease-out), visibility 0s linear var(--dur-long); }
+.menu-open .sheet { opacity: 1; visibility: visible; transition: opacity var(--dur-long) var(--ease-out); }
+.menu-open .nav { z-index: calc(var(--z-modal) + 1); }
+.sheet ol { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2xs); align-content: start; }
+.sheet ol a { display: flex; align-items: baseline; gap: var(--space-md); font: 300 clamp(2.5rem, 6vw, 4.5rem)/1.05 var(--font-display); text-decoration: none; color: var(--color-ink); transition: color var(--dur-short) var(--ease-out); }
+.sheet ol a small { font: 400 var(--text-sm)/1 var(--font-body); color: var(--color-muted); min-width: 2.2em; }
+.sheet ol a:hover { color: var(--color-accent-2); }
+.sheet__foot { display: flex; flex-wrap: wrap; gap: var(--space-md) var(--space-xl); color: var(--color-ink-2); font-size: var(--text-sm); }
+
+/* ---------- hero ---------- */
+.hero { position: relative; min-height: 100svh; display: grid; align-items: end; isolation: isolate; overflow: hidden; }
+.hero__photo { position: absolute; inset: 0; z-index: -2; margin: 0; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, var(--color-wash) 0%, var(--color-scrim-soft) 34%, var(--color-scrim) 78%, var(--color-paper) 100%); }
+.hero__inner { padding-block: calc(var(--nav-h) + var(--space-3xl)) var(--space-2xl); display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--space-xl) var(--gap-columns); align-items: end; }
+.hero h1 { font-size: var(--text-display); line-height: 0.88; max-width: 11ch; }
+.hero__side { display: grid; gap: var(--space-lg); padding-bottom: var(--space-xs); }
+.hero__side p { font-size: var(--text-lead); color: var(--color-ink); max-width: 30ch; }
+.hero__acts { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.stars { display: inline-flex; align-items: center; gap: var(--space-sm); color: var(--color-ink-2); font-size: var(--text-sm); text-decoration: none; }
+.stars b { font: 400 var(--text-2xl)/1 var(--font-body); letter-spacing: -0.03em; color: var(--color-ink); }
+.stars svg { width: 76px; height: 14px; color: var(--color-accent-2); }
+.stars:hover span { text-decoration: underline; text-decoration-color: var(--color-accent); }
+@media (max-width: 60rem) { .hero__inner { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- promise: three facts from the reviews ---------- */
+.promise { padding-block: var(--section-gap); }
+.promise__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-3xl) var(--gap-columns); align-items: center; }
+.promise h2 { font-size: var(--text-section); max-width: 13ch; }
+.promise ul { list-style: none; margin: var(--space-2xl) 0 0; padding: 0; display: grid; gap: 0; max-width: 560px; }
+.promise li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: var(--space-md); padding-block: var(--space-lg); border-top: var(--rule-hair) solid var(--color-rule); }
+.promise li:last-child { border-bottom: var(--rule-hair) solid var(--color-rule); }
+.promise li b { font: 400 var(--text-xl)/1 var(--font-display); color: var(--color-accent-2); }
+.promise li p { color: var(--color-ink-2); }
+.promise li p strong { color: var(--color-ink); font-weight: 500; }
+.shapes { margin: 0; display: grid; gap: var(--space-md); }
+.shapes__box { position: relative; min-height: 640px; }
+.cut { position: absolute; margin: 0; overflow: hidden; background: var(--color-paper-2); }
+.cut img { width: 100%; height: 100%; object-fit: cover; }
+.cut--a { inset: 0 18% 26% 0; clip-path: polygon(0 22%, 48% 0, 100% 16%, 100% 100%, 0 100%); }
+.cut--b { inset: 46% 0 0 34%; clip-path: polygon(0 12%, 62% 0, 100% 24%, 92% 100%, 4% 100%); }
+.shapes figcaption { font-size: var(--text-sm); color: var(--color-muted); max-width: 40ch; }
+@media (max-width: 60rem) { .promise__grid { grid-template-columns: minmax(0, 1fr); } .shapes__box { min-height: 520px; } }
+@media (max-width: 40rem) { .shapes__box { min-height: 400px; } }
+
+/* ---------- the chapter: the roof in section ---------- */
+.layers { position: relative; min-height: 520vh; border-top: var(--rule-hair) solid var(--color-rule); }
+.layers__pin { position: sticky; top: 0; height: 100svh; display: grid; grid-template-rows: auto minmax(0, 1fr); padding-top: calc(var(--nav-h) + var(--space-xl)); padding-bottom: var(--space-xl); }
+.layers__head { display: flex; justify-content: space-between; align-items: end; gap: var(--space-lg); }
+.layers__head h2 { font-size: var(--text-title); }
+.count { font: 300 var(--text-2xl)/1 var(--font-body); letter-spacing: -0.03em; color: var(--color-muted); }
+.count b { font-weight: 300; color: var(--color-ink); }
+.layers__body { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-2xl) var(--gap-columns); align-items: center; min-height: 0; }
+.fig-wrap { display: grid; gap: var(--space-lg); min-height: 0; }
+.drawing { width: 100%; height: auto; max-height: 58svh; overflow: visible; }
+.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); font-size: var(--text-sm); color: var(--color-muted); counter-reset: l; }
+.legend li { counter-increment: l; display: inline-flex; gap: var(--space-xs); transition: color var(--dur-short) var(--ease-out); }
+.legend li::before { content: counter(l); color: var(--color-rule-2); }
+.legend li.done { color: var(--color-ink-2); }
+.legend li.now { color: var(--color-ink); }
+.legend li.now::before { color: var(--color-accent-2); }
+.drawing .ln { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.drawing g { opacity: 0.16; transition: opacity var(--dur-long) var(--ease-out); }
+.drawing g.on { opacity: 1; }
+.drawing g .draw { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset var(--dur-draw) var(--ease-in-out); }
+.drawing g.on .draw { stroke-dashoffset: 0; }
+.drawing g.now .tint { stroke: var(--color-accent-2); }
+.drawing .ground { stroke: var(--color-rule-2); }
+.stage { display: grid; gap: var(--space-lg); align-content: center; }
+.stage__photo { position: relative; aspect-ratio: 4 / 3; margin: 0; border-radius: var(--radius-card); overflow: hidden; background: var(--color-paper-2); }
+.stage__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.js .stage__photo img { opacity: 0; transform: scale(1.04); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-draw) var(--ease-out); }
+.js .stage__photo img.on { opacity: 1; transform: none; }
+.stage__text { display: grid; gap: var(--space-sm); min-height: 9.5em; }
+.stage__text h3 { font-size: var(--text-title); }
+.stage__text p { color: var(--color-ink-2); max-width: 40ch; }
+.bar { position: relative; height: 2px; max-width: 320px; background: var(--color-rule); }
+.bar i { position: absolute; inset: 0; background: var(--color-accent); transform-origin: left; transform: scaleX(0.2); transition: transform var(--dur-long) var(--ease-out); }
+@media (max-width: 60rem) {
+  .legend { display: none; }
+  .layers__body { grid-template-columns: minmax(0, 1fr); gap: var(--space-md); align-content: start; }
+  .drawing { max-height: 30svh; }
+  .stage { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-md); align-items: start; }
+  .stage__text { min-height: 0; }
+}
+@media (max-width: 40rem) { .stage { grid-template-columns: minmax(0, 1fr); } .stage__photo { aspect-ratio: 16 / 10; } .stage__text h3 { font-size: var(--text-xl); } }
+@media (prefers-reduced-motion: reduce) { .layers { min-height: auto; } .layers__pin { position: static; height: auto; } }
+
+/* ---------- triage: what happened to your roof ---------- */
+.triage { padding-block: var(--section-gap); background: var(--color-paper-2); }
+.triage__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-2xl) var(--gap-columns); align-items: start; }
+.triage h2 { font-size: var(--text-section); max-width: 9ch; }
+.triage__pick { margin-top: var(--space-xl); display: grid; gap: var(--space-2xs); }
+.issue { white-space: nowrap; display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); width: 100%; min-height: 52px; padding: var(--space-sm) var(--space-md); border: 0; border-top: var(--rule-hair) solid var(--color-rule); border-radius: 0; background: transparent; color: var(--color-ink-2); text-align: left; font: 400 var(--text-lg)/1.25 var(--font-body); cursor: pointer; transition: color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out); }
+.issue:hover { color: var(--color-ink); background: var(--color-paper-3); }
+.issue[aria-pressed="true"] { color: var(--color-ink); background: var(--color-paper-3); box-shadow: inset 3px 0 0 var(--color-accent); }
+.issue svg { width: 18px; height: 18px; flex: none; opacity: 0; transition: opacity var(--dur-short) var(--ease-out); }
+.issue[aria-pressed="true"] svg { opacity: 1; color: var(--color-accent-2); }
+.answer { position: sticky; top: calc(var(--nav-h) + var(--space-xl)); display: grid; gap: var(--space-xl); padding: var(--space-2xl); background: var(--color-paper); border-radius: var(--radius-card); }
+.answer h3 { font-size: var(--text-title); }
+.answer > p { color: var(--color-ink-2); font-size: var(--text-lead); max-width: 44ch; }
+.answer blockquote { margin: 0; padding-left: var(--space-lg); border-left: 2px solid var(--color-accent); display: grid; gap: var(--space-sm); }
+.answer blockquote p { font: 300 var(--text-xl)/1.3 var(--font-display); color: var(--color-ink); }
+.answer cite { font-style: normal; font-size: var(--text-sm); color: var(--color-muted); }
+.answer [data-a] { transition: opacity var(--dur-short) var(--ease-out); }
+.answer.swap [data-a] { opacity: 0; }
+@media (max-width: 60rem) { .triage__grid { grid-template-columns: minmax(0, 1fr); } .answer { position: static; padding: var(--space-xl) var(--space-lg); } }
+
+/* ---------- the ledger: numbers from the reviews ---------- */
+.ledger { padding-block: var(--section-gap); }
+.ledger h2 { font-size: var(--text-section); max-width: 14ch; }
+.ledger__row { margin-top: var(--space-3xl); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-columns); }
+.fig { display: grid; gap: var(--space-sm); align-content: start; padding-top: var(--space-lg); border-top: var(--rule-hair) solid var(--color-rule-2); }
+.fig b { font: 300 var(--text-figure)/0.85 var(--font-body); color: var(--color-ink); letter-spacing: -0.045em; }
+.fig b small { font-size: 0.42em; color: var(--color-accent-2); }
+.fig p { color: var(--color-ink-2); max-width: 30ch; }
+.fig cite { font-style: normal; font-size: var(--text-sm); color: var(--color-muted); }
+@media (max-width: 60rem) { .ledger__row { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xl); } }
+
+/* ---------- work: their photographs on a strip ---------- */
+.work { padding-bottom: var(--section-gap); }
+.work__head { display: flex; justify-content: space-between; align-items: end; gap: var(--space-lg); }
+.work h2 { font-size: var(--text-section); }
+.work__ctl { display: flex; gap: var(--space-xs); }
+.round { display: grid; place-items: center; width: 50px; height: 50px; border: 1px solid var(--color-rule-2); border-radius: 50%; background: transparent; color: var(--color-ink); cursor: pointer; transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out); }
+.round:hover { background: var(--color-paper-3); border-color: var(--color-ink-2); }
+.round:disabled { opacity: 0.4; cursor: not-allowed; }
+.round svg { width: 18px; height: 18px; }
+.strip { margin-top: var(--space-2xl); display: grid; grid-auto-flow: column; grid-auto-columns: minmax(280px, 30%); gap: var(--gap-columns); overflow-x: auto; scroll-snap-type: x mandatory; padding-inline: max(var(--gutter), calc((100vw - var(--container)) / 2 + var(--gutter))); scroll-padding-inline: max(var(--gutter), calc((100vw - var(--container)) / 2 + var(--gutter))); scrollbar-width: none; overscroll-behavior-x: contain; }
+.strip::-webkit-scrollbar { display: none; }
+.strip figure { margin: 0; scroll-snap-align: start; display: grid; gap: var(--space-sm); }
+.strip .ph { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-card); background: var(--color-paper-2); }
+.strip .ph img { width: 100%; height: 100%; object-fit: cover; }
+.strip figcaption { font-size: var(--text-sm); color: var(--color-ink-2); }
+@media (max-width: 40rem) { .strip { grid-auto-columns: 78%; } }
+
+/* ---------- quote form and contact ---------- */
+.quote { padding-block: var(--section-gap); background: var(--color-paper-2); }
+.quote__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-3xl) var(--gap-columns); }
+.quote h2 { font-size: var(--text-section); max-width: 8ch; }
+.quote__lead { margin-top: var(--space-lg); color: var(--color-ink-2); font-size: var(--text-lead); max-width: 34ch; }
+.facts { margin-top: var(--space-2xl); display: grid; gap: 0; }
+.facts div { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: var(--space-md); padding-block: var(--space-md); border-top: var(--rule-hair) solid var(--color-rule); }
+.facts dt { color: var(--color-muted); font-size: var(--text-sm); padding-top: 0.2em; }
+.facts dd { margin: 0; }
+form { display: grid; gap: var(--space-lg); }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: var(--space-sm); }
+legend, label { font-size: var(--text-sm); color: var(--color-ink-2); padding: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+.chip { white-space: nowrap; min-height: 44px; padding: 0 var(--space-md); border: 1px solid var(--color-rule-2); border-radius: var(--radius-pill); background: transparent; color: var(--color-ink-2); font: 400 var(--text-sm)/1 var(--font-body); cursor: pointer; transition: background-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out); }
+.chip:hover { border-color: var(--color-ink-2); color: var(--color-ink); }
+.chip[aria-pressed="true"] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper); }
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md); }
+.field { display: grid; gap: var(--space-xs); }
+input, textarea { width: 100%; min-height: 50px; padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-muted); border-radius: var(--radius-card); background: var(--color-paper); color: var(--color-ink); font-size: var(--text-md); transition: border-color var(--dur-short) var(--ease-out); }
+textarea { min-height: 112px; resize: vertical; }
+input::placeholder, textarea::placeholder { color: var(--color-muted); }
+input:hover, textarea:hover { border-color: var(--color-ink-2); }
+input:focus-visible, textarea:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 1px; border-color: var(--color-focus); }
+[aria-invalid="true"] { border-color: var(--color-error); }
+.err { min-height: 1.4em; color: var(--color-error); font-size: var(--text-sm); }
+.note { font-size: var(--text-sm); color: var(--color-muted); }
+.form-end { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md) var(--space-lg); }
+.map { margin-top: var(--space-3xl); aspect-ratio: 21 / 8; border-radius: var(--radius-card); overflow: hidden; background: var(--color-paper-3); }
+.map iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.6) contrast(1.05); }
+@media (max-width: 60rem) { .quote__grid { grid-template-columns: minmax(0, 1fr); } .map { aspect-ratio: 4 / 3; } }
+@media (max-width: 40rem) { .row2 { grid-template-columns: minmax(0, 1fr); } .facts div { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xs); } }
+
+/* ---------- footer ---------- */
+.foot { padding-block: var(--space-3xl) var(--space-2xl); }
+.foot__big { font: 300 clamp(2.75rem, 9vw, 10rem)/0.9 var(--font-body); letter-spacing: -0.045em; }
+.foot__big a { text-decoration: none; }
+.foot__big a:hover { color: var(--color-accent-2); }
+.foot__row { margin-top: var(--space-2xl); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-md) var(--space-xl); padding-top: var(--space-lg); border-top: var(--rule-hair) solid var(--color-rule); font-size: var(--text-sm); color: var(--color-muted); }
+.foot__row nav { display: flex; flex-wrap: wrap; gap: var(--space-md) var(--space-lg); }
+.foot__row a { color: var(--color-ink-2); }
+.preview { margin-top: var(--space-md); font-size: var(--text-xs); color: var(--color-muted); }
+
+/* mobile action bar */
+.mbar { display: none; }
+@media (max-width: 40rem) {
+  .mbar { position: fixed; z-index: var(--z-sticky); left: var(--space-sm); right: var(--space-sm); bottom: var(--space-sm); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xs); padding: var(--space-xs); border-radius: var(--radius-pill); background: color-mix(in oklab, var(--color-paper) 88%, transparent); border: 1px solid var(--color-rule); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .mbar .btn { min-height: 48px; padding: 0 var(--space-sm); }
+  :root { --chat-bottom: var(--chat-bottom-m); }
+  .foot { padding-bottom: calc(var(--space-2xl) + 80px); }
+  .layers__pin { padding-bottom: calc(var(--space-md) + 76px); }
+  .hero__inner { padding-bottom: calc(var(--space-xl) + 72px); }
+}
+
+/* one reveal, visible by default */
+.js .rv { opacity: 0; transform: translateY(18px); transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out); }
+.js .rv.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; } *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Sari la conținut</a>
+
+<header class="nav" id="nav">
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="sheet" id="menuBtn"><span aria-hidden="true"><i></i><i></i></span><em>Meniu</em><span class="visually-hidden">Deschide meniul</span></button>
+  <a class="wordmark" href="#top" aria-label="Reparații Acoperișuri Timișoara, începutul paginii"><svg viewBox="0 0 26 18" aria-hidden="true"><path d="M1 16 13 3l12 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg><b>Acoperișuri</b></a>
+  <a class="btn" href="#oferta">Cere ofertă</a>
+</header>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Meniu" hidden>
+  <ol>
+    <li><a href="#straturi"><small>01</small>Strat cu strat</a></li>
+    <li><a href="#problema"><small>02</small>Ce s-a stricat?</a></li>
+    <li><a href="#cifre"><small>03</small>Din recenzii</a></li>
+    <li><a href="#lucrari"><small>04</small>Lucrări</a></li>
+    <li><a href="#oferta"><small>05</small>Cere o ofertă</a></li>
+  </ol>
+  <div></div>
+  <div class="sheet__foot"><a class="link" href="tel:+40751854810">0751 854 810</a><span>Str. Constantin Titel Petrescu 9, Timișoara</span><span>De duminică până vineri: non-stop</span></div>
+</div>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h-hero">
+  <figure class="hero__photo"><img src="img/ridge.webp" srcset="img/ridge-s.webp 900w, img/ridge.webp 2000w" sizes="100vw" width="2000" height="1500" alt="Acoperiș în patru ape din țiglă metalică roșie, văzut de pe coamă, cu un coleg care montează ultimele șuruburi" fetchpriority="high"></figure>
+  <div class="container hero__inner">
+    <h1 id="h-hero">Acoperișul tău, de la lemn la coamă.</h1>
+    <div class="hero__side">
+      <p>Șarpante, tablă, jgheaburi și reparații, în Timișoara.</p>
+      <div class="hero__acts">
+        <a class="btn" href="#oferta"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.4.4 0 0 0 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Cere o ofertă</a>
+        <a class="btn btn--quiet" href="tel:+40751854810">Sună 0751 854 810</a>
+      </div>
+      <a class="stars" href="https://www.google.com/maps/search/?api=1&amp;query=Repara%C8%9Bii%20Acoperisuri%20Timisoara&amp;query_place_id=ChIJz7S8lrxdRUcRRQV5rjAvAR8" target="_blank" rel="noopener"><b class="num">4,9</b><svg viewBox="0 0 76 14" aria-hidden="true"><g fill="currentColor"><path id="st" d="M7 0l2.1 4.6 5 .5-3.8 3.3 1.1 4.9L7 10.8 2.6 13.3l1.1-4.9L-.1 5.1l5-.5Z"/><use href="#st" x="15.5"/><use href="#st" x="31"/><use href="#st" x="46.5"/><use href="#st" x="62"/></g></svg><span>64 de recenzii pe Google</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="promise" aria-labelledby="h-promise">
+  <div class="container promise__grid">
+    <div>
+      <h2 id="h-promise" class="rv">Prețul îl stabilim înainte, curățenia o facem la final.</h2>
+      <ul class="rv">
+        <li><b>1</b><p><strong>Vedem acoperișul și vă spunem prețul.</strong> „… prețul evaluat și agreat dinainte …”, scrie un client.</p></li>
+        <li><b>2</b><p><strong>Lucrăm cu grijă la casă și la curte.</strong> „Au grija cu obiectele din casa si curte”, scrie altul.</p></li>
+        <li><b>3</b><p><strong>Plecăm când e totul curat.</strong> „… la final au lăsat totul curat.”</p></li>
+      </ul>
+    </div>
+    <figure class="shapes rv" aria-label="Două lucrări ale echipei">
+      <div class="shapes__box">
+      <div class="cut cut--a"><img src="img/house-s.webp" srcset="img/house-s.webp 900w, img/house.webp 2000w" sizes="(min-width: 60rem) 34vw, 80vw" width="2000" height="952" loading="lazy" alt="Casă cu acoperișul în lucru: folie anticondens și șipci montate pe toată suprafața"></div>
+      <div class="cut cut--b"><img src="img/attic-s.webp" srcset="img/attic-s.webp 900w, img/attic.webp 2000w" sizes="(min-width: 60rem) 26vw, 66vw" width="2000" height="1500" loading="lazy" alt="Pod văzut din interior, cu șarpanta nouă din lemn și astereala deasupra"></div>
+      </div>
+      <figcaption>Șipci pe folie, la o casă în lucru, și o șarpantă nouă văzută din pod.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="layers" id="straturi" aria-labelledby="h-layers">
+  <div class="layers__pin container">
+    <div class="layers__head">
+      <h2 id="h-layers">Un acoperiș, strat cu strat</h2>
+      <p class="count num" aria-hidden="true"><b id="cnt">01</b> / 05</p>
+    </div>
+    <div class="layers__body">
+      <div class="fig-wrap">
+        <svg class="drawing" id="drawing" viewBox="0 0 820 470" role="img" aria-label="Secțiune printr-un acoperiș în două ape: șarpanta, folia, șipcile, învelitoarea din tablă și jgheabul"></svg>
+        <ol class="legend" id="legend" aria-hidden="true"><li>Șarpanta</li><li>Folia</li><li>Șipci</li><li>Învelitoarea</li><li>Coamă și jgheab</li></ol>
+      </div>
+      <div class="stage">
+        <figure class="stage__photo" id="stagePhoto"></figure>
+        <div>
+          <div class="stage__text" aria-live="polite"><h3 id="stTitle"></h3><p id="stText"></p></div>
+          <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="triage" id="problema" aria-labelledby="h-triage">
+  <div class="container triage__grid">
+    <div>
+      <h2 id="h-triage" class="rv">Ce s-a stricat sus?</h2>
+      <div class="triage__pick" role="group" aria-label="Alege problema" id="issues"></div>
+    </div>
+    <div class="answer" id="answer" aria-live="polite">
+      <h3 data-a id="aTitle"></h3>
+      <p data-a id="aText"></p>
+      <blockquote data-a id="aQuote"><p id="aQ"></p><cite id="aWho"></cite></blockquote>
+      <div data-a><a class="btn" id="aBtn" href="#oferta" target="_blank" rel="noopener">Trimite problema pe WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="ledger" id="cifre" aria-labelledby="h-ledger">
+  <div class="container">
+    <h2 id="h-ledger" class="rv">Ce scriu clienții, în cifre</h2>
+    <div class="ledger__row">
+      <div class="fig rv"><b class="num">4,9</b><p>Nota pe Google. 58 din cele 64 de recenzii au cinci stele.</p><cite>Profilul Google al firmei</cite></div>
+      <div class="fig rv"><b class="num">150<small> m²</small></b><p>Acoperiș vechi curățat și tablă nouă montată de la A la Z, în 4 zile.</p><cite>Dintr-o recenzie Google</cite></div>
+      <div class="fig rv"><b class="num">290<small> m²</small></b><p>Acoperiș de casă veche renovat, cu streașina îmbrăcată, în cam o săptămână.</p><cite>Dintr-o recenzie Google</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="lucrari" aria-labelledby="h-work">
+  <div class="container work__head">
+    <h2 id="h-work" class="rv">Lucrări</h2>
+    <div class="work__ctl"><button class="round" type="button" id="prev" aria-label="Fotografia anterioară"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><button class="round" type="button" id="next" aria-label="Fotografia următoare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
+  </div>
+  <div class="strip" id="strip" tabindex="0" aria-label="Fotografii din lucrări, derulează orizontal">
+    <figure><div class="ph"><img src="img/worker-s.webp" width="660" height="660" loading="lazy" alt="Montator pe șarpantă, pe muchia acoperișului, cu bormașina"></div><figcaption>Montaj pe o șarpantă nouă, deasupra izolației.</figcaption></figure>
+    <figure><div class="ph"><img src="img/gable-s.webp" width="675" height="900" loading="lazy" alt="Fronton de șarpantă din lemn, cu căpriori îmbinați la coamă"></div><figcaption>Fronton de șarpantă, înainte de folie.</figcaption></figure>
+    <figure><div class="ph"><img src="img/snow-s.webp" width="506" height="900" loading="lazy" alt="Acoperiș din țiglă metalică roșie, pe jumătate acoperit de zăpadă, cu un om lângă coș"></div><figcaption>Intervenție pe acoperiș, iarna.</figcaption></figure>
+    <figure><div class="ph"><img src="img/detail-s.webp" width="736" height="505" loading="lazy" alt="Îmbinare de căpriori din lemn prinsă cu plăci și buloane metalice"></div><figcaption>Îmbinări prinse cu plăci și buloane.</figcaption></figure>
+    <figure><div class="ph"><img src="img/tiles-s.webp" width="900" height="506" loading="lazy" alt="Țiglă metalică roșie, rânduri drepte până la streașină"></div><figcaption>Țiglă metalică, aliniată până la streașină.</figcaption></figure>
+    <figure><div class="ph"><img src="img/attic-s.webp" width="900" height="675" loading="lazy" alt="Pod cu șarpantă nouă din lemn, văzut din interior"></div><figcaption>Șarpantă nouă, văzută din pod.</figcaption></figure>
+  </div>
+</section>
+
+<section class="quote" id="oferta" aria-labelledby="h-quote">
+  <div class="container">
+    <div class="quote__grid">
+      <div>
+        <h2 id="h-quote" class="rv">Cere o ofertă</h2>
+        <p class="quote__lead">Spuneți-ne ce lucrare aveți și cam câți metri. Pozele cu acoperișul le puteți trimite apoi în conversația de WhatsApp.</p>
+        <dl class="facts">
+          <div><dt>Telefon</dt><dd><a class="link num" href="tel:+40751854810">0751 854 810</a></dd></div>
+          <div><dt>Program</dt><dd>De duminică până vineri, non-stop<br>Sâmbătă: închis</dd></div>
+          <div><dt>Adresă</dt><dd>Str. Constantin Titel Petrescu 9, 300116 Timișoara</dd></div>
+        </dl>
+      </div>
+      <form id="qf" novalidate>
+        <fieldset>
+          <legend>Ce lucrare aveți?</legend>
+          <div class="chips" data-g="job">
+            <button class="chip" type="button" aria-pressed="true">Acoperiș nou</button>
+            <button class="chip" type="button" aria-pressed="false">Renovare</button>
+            <button class="chip" type="button" aria-pressed="false">Infiltrație</button>
+            <button class="chip" type="button" aria-pressed="false">Șarpantă</button>
+            <button class="chip" type="button" aria-pressed="false">Jgheaburi și burlane</button>
+            <button class="chip" type="button" aria-pressed="false">Altceva</button>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <div class="field"><label for="f-area">Suprafața, aproximativ (m²)</label><input id="f-area" name="area" inputmode="numeric" placeholder="ex. 120"></div>
+          <div class="field"><label for="f-place">Localitatea</label><input id="f-place" name="place" value="Timișoara" autocomplete="address-level2"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-name">Numele</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Telefonul</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-msg">Detalii (opțional)</label><textarea id="f-msg" name="msg" placeholder="ex. curge la coș după ploaie, casă cu etaj"></textarea></div>
+        <p class="err" role="alert"></p>
+        <div class="form-end"><button class="btn" type="submit">Trimite pe WhatsApp</button><span class="note">Se deschide WhatsApp cu mesajul scris. Nu trimitem nimic altundeva.</span></div>
+      </form>
+    </div>
+    <div class="map"><iframe title="Harta: Reparații Acoperișuri Timișoara, Str. Constantin Titel Petrescu 9" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Repara%C8%9Bii%20Acoperisuri%20Timisoara%2C%20Strada%20Constantin%20Titel%20Petrescu%209%2C%20Timi%C8%99oara&amp;output=embed"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__big"><a href="tel:+40751854810" class="num">0751 854 810</a></p>
+    <div class="foot__row">
+      <span>Reparații Acoperișuri Timișoara · Str. Constantin Titel Petrescu 9</span>
+      <nav aria-label="Pagini legale"><a href="termeni.html">Termeni și condiții</a><a href="confidentialitate.html">Confidențialitate</a></nav>
+      <span>Fotografii: profilul Google al firmei</span>
+    </div>
+    <p class="preview">Previzualizare realizată de Brightfold, pe baza informațiilor publice ale firmei.</p>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn btn--quiet" href="tel:+40751854810">Sună</a><a class="btn" href="#oferta">Cere ofertă</a></div>
+
+<script src="bf-core.js"></script>
+<script>
+window.BF_CHAT = {
+  name: 'Vlad', phone: '40751854810',
+  role: { ro: 'asistentul de pe site' },
+  hello: { ro: 'Bună ziua, sunt Vlad. Vă spun ce lucrări facem, programul, unde suntem sau cum cereți o ofertă. Ce vă interesează?' },
+  topics: [
+    { k: ['pret', 'cost', 'costa', 'tarif', 'oferta', 'deviz', 'cat'], generic: true, chip: { ro: 'Cât costă?' }, ro: 'Prețul depinde de suprafață și de starea acoperișului. Venim, vedem și stabilim prețul împreună înainte de lucru. Cel mai repede: trimiteți formularul de ofertă sau câteva poze pe WhatsApp.' },
+    { k: ['program', 'ora', 'deschis', 'sambata', 'duminica', 'non', 'stop'], generic: true, chip: { ro: 'Program' }, ro: 'De duminică până vineri suntem disponibili non-stop. Sâmbătă: închis.' },
+    { k: ['adresa', 'unde', 'sediu', 'zona', 'oras'], generic: true, chip: { ro: 'Unde sunteți?' }, ro: 'Str. Constantin Titel Petrescu 9, 300116 Timișoara.' },
+    { k: ['telefon', 'suna', 'numar', 'contact', 'whatsapp'], generic: true, ro: 'Ne găsiți la 0751 854 810, telefon sau WhatsApp.' },
+    { k: ['curge', 'infiltr', 'picura', 'apa', 'ploua', 'reparat', 'reparatie'], chip: { ro: 'Îmi curge în casă' }, ro: 'Pentru o infiltrație, trimiteți-ne pe WhatsApp o poză din pod și una de afară, plus adresa. Vedem de unde intră apa și vă spunem ce e de făcut.' },
+    { k: ['nou', 'tabla', 'tigla', 'invelitoare', 'montaj'], chip: { ro: 'Acoperiș nou' }, ro: 'Facem acoperișul de la A la Z: șarpanta, folia, șipcile, tabla sau țigla metalică, coama, streașina și jgheaburile.' },
+    { k: ['sarpanta', 'lemn', 'capriori', 'grinzi'], ro: 'Montăm șarpante noi din lemn și consolidăm șarpantele existente, inclusiv pentru panouri fotovoltaice.' },
+    { k: ['jgheab', 'burlan', 'scurgere', 'streasina'], ro: 'Montăm jgheaburi și burlane și ducem scurgerea unde nu face rău casei, inclusiv prin pământ.' },
+    { k: ['porumb', 'pasari', 'pod'], ro: 'Închidem accesul porumbeilor în pod, cu casete de tablă și benzi cu țepi anti-păsări.' },
+    { k: ['fotovolt', 'panou', 'solar'], ro: 'Consolidăm acoperișul ca să susțină panourile fotovoltaice.' }
+  ],
+  wa: { ro: 'Pentru asta e mai simplu să vorbiți direct cu echipa pe WhatsApp:' }
+};
+</script>
+<script src="bf-chat.js"></script>
+<script>
+(() => {
+  const { $, $$ } = BF;
+  const reduce = BF.reduce;
+
+  /* ===== menu sheet ===== */
+  const sheet = $('#sheet'), mb = $('#menuBtn');
+  const setMenu = (on) => { document.documentElement.classList.toggle('menu-open', on); mb.setAttribute('aria-expanded', String(on)); if (on) { sheet.hidden = false; requestAnimationFrame(() => $('a', sheet).focus()); } else { setTimeout(() => { if (!document.documentElement.classList.contains('menu-open')) sheet.hidden = true; }, 600); } };
+  mb.addEventListener('click', () => setMenu(mb.getAttribute('aria-expanded') !== 'true'));
+  $$('a', sheet).forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && mb.getAttribute('aria-expanded') === 'true') { setMenu(false); mb.focus(); } });
+
+  /* ===== the roof in section: geometry ===== */
+  const W = 820, cx = 410, ridgeY = 70, eaveY = 360, half = 330;
+  const L = { x: cx - half, y: eaveY }, R = { x: cx + half, y: eaveY }, T = { x: cx, y: ridgeY };
+  const len = Math.hypot(half, eaveY - ridgeY), ux = half / len, uy = (eaveY - ridgeY) / len; // along the left slope, going down
+  const slope = (d, ext = 0) => { // a line parallel to both slopes at distance d above the rafters
+    const lift = d / ux; // vertical offset that keeps the parallel distance d
+    const a = { x: L.x - ext * ux, y: L.y + ext * uy - lift }, b = { x: T.x, y: T.y - lift }, c = { x: R.x + ext * ux, y: R.y + ext * uy - lift };
+    return [a, b, c];
+  };
+  const g = [];
+  // 1 timber: rafters, tie beam, king post, struts, wall plates, and the house walls under them
+  {
+    const [a1, b1, c1] = slope(0, 18), [a2, b2, c2] = slope(-16, 18);
+    let s = `<path class="ln ground" stroke-width="1.5" d="M${L.x + 40} ${eaveY + 6} V 452 M${R.x - 40} ${eaveY + 6} V 452 M30 452 H ${W - 30}"/>`;
+    s += `<path pathLength="1" class="ln draw tint" stroke="var(--color-timber)" stroke-width="2.4" d="M${a1.x} ${a1.y} L${b1.x} ${b1.y} L${c1.x} ${c1.y} M${a2.x} ${a2.y} L${b2.x} ${b2.y} L${c2.x} ${c2.y}"/>`;
+    s += `<path pathLength="1" class="ln draw tint" stroke="var(--color-timber)" stroke-width="2.4" d="M${L.x + 30} ${eaveY - 4} H ${R.x - 30} M${cx} ${ridgeY + 18} V ${eaveY - 4} M${cx} ${eaveY - 70} L ${cx - 150} ${eaveY - 128} M${cx} ${eaveY - 70} L ${cx + 150} ${eaveY - 128}"/>`;
+    s += `<path pathLength="1" class="ln draw" stroke="var(--color-timber)" stroke-width="1.4" d="M${L.x + 40} ${eaveY - 4} v 12 h 30 v -12 M${R.x - 70} ${eaveY - 4} v 12 h 30 v -12"/>`;
+    g.push(s);
+  }
+  // 2 membrane: one thin line just above the rafters
+  {
+    const [a, b, c] = slope(6, 26);
+    g.push(`<path pathLength="1" class="ln draw tint" stroke="var(--color-membrane)" stroke-width="3" d="M${a.x} ${a.y} L${b.x} ${b.y} L${c.x} ${c.y}"/>`);
+  }
+  // 3 counter-battens along the slope and battens across it
+  {
+    const [a, b, c] = slope(14, 22);
+    let s = `<path pathLength="1" class="ln draw" stroke="var(--color-timber)" stroke-width="5" d="M${a.x} ${a.y} L${b.x} ${b.y} L${c.x} ${c.y}"/>`;
+    const n = 9; let bat = '';
+    for (const side of [-1, 1]) for (let i = 1; i < n; i++) {
+      const t = i / n, px = cx + side * half * t, py = ridgeY + (eaveY - ridgeY) * t - 22 / ux;
+      bat += `<rect x="${(px - 7).toFixed(1)}" y="${(py - 6).toFixed(1)}" width="14" height="9" rx="1" fill="var(--color-timber)" transform="rotate(${(side * Math.atan2(eaveY - ridgeY, half) * 180 / Math.PI).toFixed(1)} ${px.toFixed(1)} ${py.toFixed(1)})"/>`;
+    }
+    s += `<g class="bats on">${bat}</g>`;
+    g.push(s);
+  }
+  // 4 the metal: a wavy tile profile above the battens
+  {
+    const lift = 34 / ux; let d = '';
+    for (const side of [-1, 1]) {
+      const steps = 14; let p = '';
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps, x = cx + side * (half + 26) * t, y = ridgeY + (eaveY - ridgeY) * t + 26 * uy * t - lift + (i % 2 ? -5 : 4);
+        p += (i ? ' L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1);
+      }
+      d += p + ' ';
+    }
+    g.push(`<path pathLength="1" class="ln draw tint" stroke="var(--color-metal)" stroke-width="5" d="${d}"/>`);
+  }
+  // 5 ridge cap, gutters and downpipes
+  {
+    const top = ridgeY - 34 / ux - 6; const gx = [L.x - 18, R.x + 18], gy = eaveY + 26 * uy - 30 / ux + 18;
+    let s = `<path pathLength="1" class="ln draw tint" stroke="var(--color-accent)" stroke-width="5" d="M${cx - 34} ${top + 22} Q ${cx} ${top - 14} ${cx + 34} ${top + 22}"/>`;
+    for (const x of gx) s += `<path pathLength="1" class="ln draw tint" stroke="var(--color-accent)" stroke-width="3" d="M${x - 18} ${gy} q 18 22 36 0 M${x} ${gy + 12} V 452"/>`;
+    g.push(s);
+  }
+  const svg = $('#drawing');
+  svg.innerHTML = g.map((s, i) => `<g data-l="${i}">${s}</g>`).join('');
+  const groups = $$('g[data-l]', svg);
+
+  const STEPS = [
+    { img: 'gable', alt: 'Fronton de șarpantă din lemn, cu căpriori îmbinați la coamă', t: 'Șarpanta', p: 'Căpriori, grinzi și contrafișe din lemn, îmbinate cu plăci și buloane. Facem șarpante noi și consolidăm cele vechi.' },
+    { img: 'battens', alt: 'Folie anticondens întinsă pe căpriori, cu șipci bătute peste ea', t: 'Folia', p: 'Folia anticondens ține apa și condensul departe de lemn și de pod.' },
+    { img: 'house', alt: 'Casă cu acoperișul în lucru: folie și șipci montate pe toată suprafața', t: 'Șipci și contrașipci', p: 'Contrașipcile lasă aerul să circule, șipcile dau pasul pe care se prinde tabla.' },
+    { img: 'tiles', alt: 'Țiglă metalică roșie montată în rânduri drepte', t: 'Învelitoarea', p: 'Tablă sau țiglă metalică, prinsă cu șuruburi cu garnitură, rând cu rând până la streașină.' },
+    { img: 'gutter', alt: 'Streașină cu jgheab și burlan roșu la colțul casei, iarna', t: 'Coamă, streașină, jgheaburi', p: 'Coama închide acoperișul sus. Jgheabul și burlanul duc apa departe de pereți, chiar și prin pământ.' }
+  ];
+  const ph = $('#stagePhoto');
+  ph.innerHTML = STEPS.map((s, i) => `<img src="img/${s.img}-s.webp" alt="" width="900" height="675" ${i ? 'loading="lazy"' : ''} data-i="${i}">`).join('');
+  const imgs = $$('img', ph);
+  let cur = -1;
+  const show = (i) => {
+    if (i === cur) return; cur = i;
+    groups.forEach((gr, k) => { gr.classList.toggle('on', k <= i); gr.classList.toggle('now', k === i); });
+    $$('#legend li').forEach((li, k) => { li.classList.toggle('done', k < i); li.classList.toggle('now', k === i); });
+    imgs.forEach((im, k) => { im.classList.toggle('on', k === i); im.alt = k === i ? STEPS[k].alt : ''; });
+    $('#stTitle').textContent = STEPS[i].t; $('#stText').textContent = STEPS[i].p;
+    $('#cnt').textContent = String(i + 1).padStart(2, '0'); $('#bar').style.transform = `scaleX(${(i + 1) / STEPS.length})`;
+  };
+  const sec = $('#straturi');
+  if (reduce) { show(STEPS.length - 1); groups.forEach((gr) => gr.classList.add('on')); }
+  else {
+    const onScroll = () => { const r = sec.getBoundingClientRect(), span = sec.offsetHeight - innerHeight; const p = Math.min(0.999, Math.max(0, -r.top / Math.max(1, span))); show(Math.floor(p * STEPS.length)); };
+    addEventListener('scroll', onScroll, { passive: true }); addEventListener('resize', onScroll); onScroll();
+  }
+
+  /* ===== what happened up there ===== */
+  const ISS = [
+    { k: 'Îmi curge în casă', t: 'Infiltrații și reparații', p: 'Căutăm de unde intră apa (coș, dolie, coamă, tablă desprinsă) și reparăm acolo, nu doar unde se vede pata.', msg: 'Îmi curge apa în casă de la acoperiș.' },
+    { k: 'Acoperiș nou', t: 'Acoperiș nou, de la A la Z', p: 'Șarpantă, folie, șipci, tablă, coamă, streașină și jgheaburi, făcute de aceeași echipă.', q: '… A durat 4 zile curatarea acoperisului vechi plus montaj A-Z acoperis nou din tabla 150mp cu protectie pentru lemnaria laterala. …', msg: 'Vreau un acoperiș nou.' },
+    { k: 'Acoperiș vechi', t: 'Renovare', p: 'Scoatem învelitoarea veche, verificăm lemnul și montăm acoperișul nou, cu streașina îmbrăcată.', q: 'Renovare acoperis casa veche aprox 290 mp + imbracare streasina. Baietii s-au miscat foarte repede au terminat cam intr- o saptamana. …', msg: 'Am un acoperiș vechi de renovat.' },
+    { k: 'Jgheab sau burlan', t: 'Jgheaburi și burlane', p: 'Montăm jgheaburi și burlane noi și ducem apa departe de casă, la nevoie prin pământ.', q: 'Echipa a montat un burlan nou la colțul unde apa dădea peste jgheab și au dus scurgerea prin pământ. …', msg: 'Am o problemă la jgheaburi sau burlane.' },
+    { k: 'Porumbei în pod', t: 'Protecție anti-păsări', p: 'Închidem accesul păsărilor cu casete de tablă și benzi cu țepi pe acoperiș.', q: '… S-a aplicat o caseta de tabla alaturi de benzi cu tepi anti pasari pe acoperisul balconului de la etajul 5. Echipa este foarte serioasa si prompta. …', msg: 'Am porumbei care intră în pod.' },
+    { k: 'Panouri solare', t: 'Consolidare pentru panouri', p: 'Întărim acoperișul ca să ducă greutatea panourilor fotovoltaice, înainte de montajul lor.', q: 'Am avut nevoie de consolidarea acoperișului pentru a susține panouri fotovoltaice. Au venit la ora anunțată, au lucrat intens, au terminat mai repede decât ne așteptam și au făcut treabă de calitate. …', msg: 'Vreau să consolidez acoperișul pentru panouri fotovoltaice.' }
+  ];
+  const box = $('#issues'), ans = $('#answer');
+  box.innerHTML = ISS.map((x, i) => `<button class="issue" type="button" aria-pressed="${i === 0}" data-i="${i}">${x.k}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>`).join('');
+  const pick = (i, anim = true) => {
+    const x = ISS[i];
+    $$('.issue', box).forEach((b, k) => b.setAttribute('aria-pressed', String(k === i)));
+    const fill = () => {
+      $('#aTitle').textContent = x.t; $('#aText').textContent = x.p;
+      $('#aQuote').hidden = !x.q; if (x.q) { $('#aQ').textContent = `„${x.q}”`; $('#aWho').textContent = 'Recenzie Google, 5 stele'; }
+      $('#aBtn').href = 'https://wa.me/40751854810?text=' + encodeURIComponent(`Bună ziua! ${x.msg} Vă pot trimite poze. Adresa: `);
+      ans.classList.remove('swap');
+    };
+    if (anim && !reduce) { ans.classList.add('swap'); setTimeout(fill, 180); } else fill();
+  };
+  box.addEventListener('click', (e) => { const b = e.target.closest('.issue'); if (!b) return; pick(+b.dataset.i); if (matchMedia('(max-width: 60rem)').matches) setTimeout(() => ans.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }), 200); });
+  pick(0, false);
+
+  /* ===== the strip ===== */
+  const strip = $('#strip'), prev = $('#prev'), next = $('#next');
+  const step = () => (strip.querySelector('figure')?.getBoundingClientRect().width || 300) + 32;
+  prev.addEventListener('click', () => strip.scrollBy({ left: -step(), behavior: reduce ? 'auto' : 'smooth' }));
+  next.addEventListener('click', () => strip.scrollBy({ left: step(), behavior: reduce ? 'auto' : 'smooth' }));
+  const ends = () => { prev.disabled = strip.scrollLeft < 8; next.disabled = strip.scrollLeft + strip.clientWidth > strip.scrollWidth - 8; };
+  strip.addEventListener('scroll', ends, { passive: true }); addEventListener('resize', ends); ends();
+
+  /* ===== quote form to WhatsApp ===== */
+  BF.form('#qf', { phone: '40751854810', msg: (f) => {
+    const a = f.area.value.trim(), d = f.msg.value.trim();
+    return `Bună ziua! Aș dori o ofertă.\nLucrarea: ${BF.ro(BF.val('job'))}` + (a ? `\nSuprafața: aprox. ${a} m²` : '') + `\nLocalitatea: ${f.place.value.trim() || 'Timișoara'}` + (d ? `\nDetalii: ${d}` : '');
+  } });
+
+  BF.init();
+})();
+</script>
+</body>
+</html>
